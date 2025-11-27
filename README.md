@@ -336,6 +336,17 @@ El proyecto es una SPA completamente estática. Puede deployarse en:
 
 Asegurarse de que el servidor redirija todas las rutas a `index.html` para que React Router funcione.
 
+### Deploy en Render
+
+El repositorio incluye un archivo `render.yaml` que describe un servicio **Static Site** listo para Render:
+
+1. Vincula el repositorio en [Render](https://render.com/) y permite que detecte el `render.yaml`.
+2. Render ejecutará `npm install && npm run build` (definido en el archivo) y publicará la carpeta `dist/`.
+3. La regla de `routes` ya redirige cualquier ruta (`/*`) a `index.html`, indispensable para React Router.
+4. Ajusta el `name` del servicio en `render.yaml` si necesitas diferenciar entornos.
+
+Cada vez que hagas push a `main`, Render reconstruirá automáticamente el sitio con los datos contenidos en `public/`.
+
 ## 🔒 Seguridad
 
 **ADVERTENCIA:** La capa de seguridad actual es **SOLO DEMOSTRATIVA**.
