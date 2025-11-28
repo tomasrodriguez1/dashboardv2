@@ -131,10 +131,10 @@ export function DashboardPage() {
       <header className="bg-white border-b border-gray-200 shadow-sm">
         <div className="px-6 py-4">
           <h1 className="text-2xl font-bold text-gray-900">
-            Dashboard Ejecutivo - Análisis de Ventas
+            Dashboard Skava - Análisis de Ventas
           </h1>
           <p className="text-sm text-gray-600 mt-1">
-            Evaluación de captura de ingreso potencial vs. venta
+            Evaluación de captura de ingreso potencial vs. venta y planificación de repuestos.
           </p>
         </div>
       </header>
@@ -195,51 +195,60 @@ export function DashboardPage() {
             </Card>
 
             {/* Fila 1: KPIs Globales + Mix por País */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
           {/* KPIs Globales */}
-          <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
-            <KPIStat
-              label="Ingresos a la fecha"
-              value={formatMillions(globalKPIs.venta_total)}
-            />
-            <KPIStat
-              label="Ingreso Potencial"
-              value={formatMillions(globalKPIs.ingreso_potencial_total)}
-            />
-            <KPIStat
-              label="% Conversión"
-              value={formatPercent(globalKPIs.conversion)}
-              valueClassName={
-                globalKPIs.conversion >= 0.4
-                  ? 'text-green-600'
-                  : globalKPIs.conversion >= 0.3
-                  ? 'text-yellow-600'
-                  : 'text-red-600'
-              }
-            />
-            <Card className="flex flex-col h-full min-h-[200px]">
-              <p className="text-sm font-medium text-gray-600 mb-3">
+          <div className="lg:col-span-8 flex flex-col gap-4 h-full">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 flex-1">
+              <KPIStat
+                label="Ingresos a la fecha"
+                value={formatMillions(globalKPIs.venta_total)}
+                centerValue
+                className="h-full min-h-[220px]"
+              />
+              <KPIStat
+                label="Ingreso Potencial"
+                value={formatMillions(globalKPIs.ingreso_potencial_total)}
+                centerValue
+                className="h-full min-h-[220px]"
+              />
+              <KPIStat
+                label="% Conversión"
+                value={formatPercent(globalKPIs.conversion)}
+                centerValue
+                className="h-full min-h-[220px]"
+                valueClassName={
+                  globalKPIs.conversion >= 0.4
+                    ? 'text-green-600'
+                    : globalKPIs.conversion >= 0.3
+                    ? 'text-yellow-600'
+                    : 'text-red-600'
+                }
+              />
+            </div>
+
+            <Card className="flex flex-col gap-4 flex-1 h-full">
+              <p className="text-sm font-medium text-gray-600">
                 Conversión por País
               </p>
-              <div className="flex justify-around items-end flex-1 pb-2 px-4">
+              <div className="flex flex-col gap-4">
                 <ProgressBar
                   label="Chile"
                   value={globalKPIs.conversion_chile}
                   color="#3b82f6"
-                  height="90%"
+                  orientation="horizontal"
                 />
                 <ProgressBar
                   label="Perú"
                   value={globalKPIs.conversion_peru}
                   color="#10b981"
-                  height="90%"
+                  orientation="horizontal"
                 />
               </div>
             </Card>
           </div>
 
           {/* Mix por País */}
-          <div className="lg:col-span-4">
+          <div className="lg:col-span-4 h-full">
             <CountryMixChart
               data={countryMixData}
               onCountryClick={handleCountryClick}
@@ -314,39 +323,47 @@ export function DashboardPage() {
             onRepuestoChange={setRepuesto}
           />
 
-          {/* KPIs de necesidades */}
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 mb-6">
-            <KPIStat
-              label="Repuestos próximos 30 días"
-              value={String(needsKPIs.total_30d)}
-            />
-            <KPIStat
-              label="Repuestos próximos 90 días"
-              value={String(needsKPIs.total_90d)}
-            />
-            <KPIStat
-              label="Repuestos próximos 180 días"
-              value={String(needsKPIs.total_180d)}
-            />
-            <KPIStat
-              label="% en Alerta"
-              value={formatPercent(needsKPIs.porcentaje_alerta)}
-              valueClassName={
-                needsKPIs.porcentaje_alerta >= 0.5
-                  ? 'text-red-600'
-                  : needsKPIs.porcentaje_alerta >= 0.3
-                  ? 'text-yellow-600'
-                  : 'text-green-600'
-              }
-            />
+          {/* Gráfico y KPIs de necesidades */}
+          <div className="grid grid-cols-1 xl:grid-cols-10 gap-6 mb-6 items-stretch">
+            <div className="xl:col-span-3">
+              <div className="grid grid-cols-2 grid-rows-2 gap-4 h-full">
+                <KPIStat
+                  label="Repuestos próximos 30 días"
+                  value={String(needsKPIs.total_30d)}
+                  className="h-full"
+                />
+                <KPIStat
+                  label="% en Alerta"
+                  value={formatPercent(needsKPIs.porcentaje_alerta)}
+                  className="h-full"
+                  valueClassName={
+                    needsKPIs.porcentaje_alerta >= 0.5
+                      ? 'text-red-600'
+                      : needsKPIs.porcentaje_alerta >= 0.3
+                      ? 'text-yellow-600'
+                      : 'text-green-600'
+                  }
+                />
+                <KPIStat
+                  label="Repuestos próximos 90 días"
+                  value={String(needsKPIs.total_90d)}
+                  className="h-full"
+                />
+                <KPIStat
+                  label="Repuestos próximos 180 días"
+                  value={String(needsKPIs.total_180d)}
+                  className="h-full"
+                />
+              </div>
+            </div>
+            <div className="xl:col-span-7">
+              <NeedsOverTime data={needsSeries} />
+            </div>
           </div>
 
-          {/* Gráfico y tabla de necesidades */}
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
-            <NeedsOverTime data={needsSeries} />
-            <div className="xl:col-span-2">
-              <ClientEquipmentNeedsTable data={clientEquipmentNeeds} />
-            </div>
+          {/* Tabla de necesidades */}
+          <div>
+            <ClientEquipmentNeedsTable data={clientEquipmentNeeds} />
           </div>
         </div>
           </>

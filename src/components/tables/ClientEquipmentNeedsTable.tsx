@@ -148,7 +148,7 @@ export function ClientEquipmentNeedsTable({ data }: ClientEquipmentNeedsTablePro
                 SKU visibles
               </th>
               <th className="px-4 py-3 text-right text-xs font-medium text-gray-700 uppercase tracking-wider">
-                Ingreso Potencial Aprox
+                Ingreso Potencial Aprox [USD]
               </th>
               <th className="px-4 py-3 text-center text-xs font-medium text-gray-700 uppercase tracking-wider">
                 Estado

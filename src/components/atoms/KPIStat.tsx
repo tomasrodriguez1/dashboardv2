@@ -16,6 +16,7 @@ export interface KPIStatProps {
   };
   className?: string;
   valueClassName?: string;
+  centerValue?: boolean;
 }
 
 export function KPIStat({
@@ -26,17 +27,30 @@ export function KPIStat({
   trend,
   className = '',
   valueClassName = '',
+  centerValue = false,
 }: KPIStatProps) {
+  const contentClasses = centerValue
+    ? 'flex-1 flex flex-col h-full'
+    : 'flex-1';
+  const valueWrapperClasses = centerValue
+    ? 'flex-1 flex items-center justify-center w-full'
+    : '';
+  const valueTextClasses = centerValue ? 'w-full text-center' : '';
+
   return (
     <Card className={className}>
       <div className="flex items-start justify-between">
-        <div className="flex-1">
-          <p className="text-sm font-medium text-gray-600 mb-1">
+        <div className={contentClasses}>
+          <p className="text-l font-medium text-gray-600 mb-1">
             {label}
           </p>
-          <p className={`text-3xl font-bold text-gray-900 ${valueClassName}`}>
-            {value}
-          </p>
+          <div className={valueWrapperClasses}>
+            <p
+              className={`text-4xl font-bold text-gray-900 ${valueClassName} ${valueTextClasses}`}
+            >
+              {value}
+            </p>
+          </div>
           {subtitle && (
             <p className="text-3xl font-bold text-gray-900">
               {subtitle}
