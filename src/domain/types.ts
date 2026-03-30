@@ -141,6 +141,45 @@ export interface AlertLevel {
 }
 
 // ===========================
+// Tipos de acciones pendientes por vendedor
+// ===========================
+
+export interface ClienteEnRiesgo {
+  cliente: string;
+  pais: Pais;
+  conversion: number; // 0-1
+  potencial: number;
+}
+
+export interface RepuestoProximo {
+  cliente: string;
+  equipo: string;
+  repuesto: string;
+  fecha: string;
+  diasRestantes: number;
+  urgente: boolean; // true si < 10 días
+}
+
+export interface VendedorAcciones {
+  vendedor: string;
+  paises: Pais[];
+  clientesEnRiesgo: ClienteEnRiesgo[];
+  repuestosProximos: RepuestoProximo[];
+}
+
+// ===========================
+// Tipos de tendencia temporal
+// ===========================
+
+export interface TendenciaSemestral {
+  periodo: string;   // "2025-H1"
+  label: string;     // "1S 2025"
+  venta: number;
+  ingreso_potencial: number;
+  conversion: number; // 0-1
+}
+
+// ===========================
 // Datos completos de la aplicación
 // ===========================
 
@@ -149,4 +188,5 @@ export interface AppData {
   categorias: CategoriaPaisRow[];
   clientes: ClienteRowNormalizado[];
   mantenciones: MantencionRow[];
+  tendencia: TendenciaSemestral[];
 }

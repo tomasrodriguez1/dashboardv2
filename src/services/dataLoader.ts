@@ -13,6 +13,7 @@ import type {
   AppData,
   Pais,
   MantencionRow,
+  TendenciaSemestral,
 } from '@domain/types';
 import { parseLocaleNumber, parsePercent } from '@utils/formatters';
 
@@ -280,23 +281,41 @@ export async function loadMantenciones(): Promise<MantencionRow[]> {
   }
 }
 
+/**
+ * Carga datos de tendencia semestral.
+ */
+export async function loadTendenciaSemestral(): Promise<TendenciaSemestral[]> {
+  try {
+    const response = await fetch('/data/tendencia_semestral.json');
+    if (!response.ok) {
+      throw new Error(`Error cargando tendencia semestral: ${response.statusText}`);
+    }
+    const data: TendenciaSemestral[] = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error cargando tendencia semestral:', error);
+    return [];
+  }
+}
+
 // ===========================
 // Cargador principal
 // ===========================
 
 /**
  * Carga todos los datos necesarios para la aplicación.
- * 
+ *
  * @returns Objeto con todos los datos normalizados
  */
 export async function loadAllData(): Promise<AppData> {
   try {
-    const [paises, categorias, clientesPeru, clientesChile, mantenciones] = await Promise.all([
+    const [paises, categorias, clientesPeru, clientesChile, mantenciones, tendencia] = await Promise.all([
       loadVentasPorPais(),
       loadVentasPorCategoria(),
       loadClientesPeru(),
       loadClientesChile(),
       loadMantenciones(),
+      loadTendenciaSemestral(),
     ]);
 
     const clientes = [...clientesChile, ...clientesPeru];
@@ -320,6 +339,7 @@ export async function loadAllData(): Promise<AppData> {
       categorias,
       clientes,
       mantenciones,
+      tendencia,
     };
   } catch (error) {
     console.error('Error cargando datos:', error);

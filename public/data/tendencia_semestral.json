@@ -1,0 +1,9 @@
+[
+  { "periodo": "2022-H1", "label": "1S 2022", "venta": 4800000, "ingreso_potencial": 48000000, "conversion": 0.10 },
+  { "periodo": "2022-H2", "label": "2S 2022", "venta": 6500000, "ingreso_potencial": 50000000, "conversion": 0.13 },
+  { "periodo": "2023-H1", "label": "1S 2023", "venta": 9200000, "ingreso_potencial": 52000000, "conversion": 0.177 },
+  { "periodo": "2023-H2", "label": "2S 2023", "venta": 12400000, "ingreso_potencial": 53500000, "conversion": 0.232 },
+  { "periodo": "2024-H1", "label": "1S 2024", "venta": 15800000, "ingreso_potencial": 55500000, "conversion": 0.285 },
+  { "periodo": "2024-H2", "label": "2S 2024", "venta": 18100000, "ingreso_potencial": 56800000, "conversion": 0.319 },
+  { "periodo": "2025-H1", "label": "1S 2025", "venta": 21578997, "ingreso_potencial": 57849303, "conversion": 0.373 }
+]

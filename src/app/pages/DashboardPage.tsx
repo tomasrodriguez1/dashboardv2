@@ -39,6 +39,9 @@ import { VendedoresBars } from '@components/charts/VendedoresBars';
 import { NeedsFilters } from '@components/molecules/NeedsFilters';
 import { NeedsOverTime } from '@components/charts/NeedsOverTime';
 import { ClientEquipmentNeedsTable } from '@components/tables/ClientEquipmentNeedsTable';
+import { TendenciaChart } from '@components/charts/TendenciaChart';
+import { AccionesPendientesCard } from '@components/molecules/AccionesPendientesCard';
+import { getVendedorAcciones } from '@services/selectors.vendedores';
 
 type DashboardTab = 'ventas' | 'vendedores' | 'repuestos';
 
@@ -98,6 +101,7 @@ export function DashboardPage() {
   
   // Métricas de vendedores
   const vendedoresKPIs = getVendedoresKPIs(data, filtros);
+  const vendedorAcciones = getVendedorAcciones(data, filtros);
 
   // Métricas de necesidades de repuestos
   const needsFiltros = {
@@ -213,17 +217,12 @@ export function DashboardPage() {
                 className="h-full min-h-[220px]"
               />
               <KPIStat
-                label="% Conversión"
-                value={formatPercent(globalKPIs.conversion)}
+                label="Oportunidad sin capturar"
+                value={formatMillions(globalKPIs.ingreso_potencial_total - globalKPIs.venta_total)}
+                subtitle={`${formatPercent(1 - globalKPIs.conversion)} del potencial`}
                 centerValue
                 className="h-full min-h-[220px]"
-                valueClassName={
-                  globalKPIs.conversion >= 0.4
-                    ? 'text-green-600'
-                    : globalKPIs.conversion >= 0.3
-                    ? 'text-yellow-600'
-                    : 'text-red-600'
-                }
+                valueClassName="text-red-600"
               />
             </div>
 
@@ -265,11 +264,16 @@ export function DashboardPage() {
           />
         </div>
 
-        {/* Fila 3: Scatter de Clientes + Tabla Top Clientes */}
+        {/* Fila 3: Tendencia histórica */}
+        <div className="grid grid-cols-1">
+          <TendenciaChart data={data.tendencia} />
+        </div>
+
+        {/* Fila 4: Scatter de Clientes + Tabla Top Clientes */}
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
           <ClientScatter data={scatterData} />
-          <TopClientsTable 
-            clientes={topClients} 
+          <TopClientsTable
+            clientes={topClients}
             p75Potencial={p75Potencial}
             topN={filtros.topN}
             onTopNChange={setTopN}
@@ -281,6 +285,9 @@ export function DashboardPage() {
         {/* PESTAÑA: VENDEDORES */}
         {activeTab === 'vendedores' && (
           <>
+        {/* Acciones pendientes */}
+        <AccionesPendientesCard vendedores={vendedorAcciones} />
+
         {/* Performance por Vendedor */}
         <div>
           <h2 className="text-xl font-bold text-gray-900 mb-4">

@@ -36,6 +36,7 @@ const mockData: AppData = {
     { pais: 'Peru', cliente: 'Cliente 5', ingreso_potencial: 200, venta: 80, vendedor: 'Vendedor 3' },
   ],
   mantenciones: [],
+  tendencia: [],
 };
 
 const filtrosSinFiltrar: Filtros = {
