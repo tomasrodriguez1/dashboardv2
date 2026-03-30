@@ -1,5 +1,5 @@
 /**
- * Badge para mostrar alertas de necesidades de repuestos.
+ * Badge para mostrar el estado de una mantención de repuestos.
  */
 
 import type { AlertLevel } from '@domain/metrics.needs';
@@ -10,14 +10,23 @@ export interface NeedBadgeProps {
 }
 
 export function NeedBadge({ level, diasRestantes }: NeedBadgeProps) {
+  const isAtrasada = level === 'ROJO' && diasRestantes !== undefined && diasRestantes < 0;
+
   const getStyles = () => {
     switch (level) {
+      case 'COMPLETADA':
+        return {
+          bg: 'bg-blue-100',
+          text: 'text-blue-800',
+          border: 'border-blue-300',
+          label: 'HECHO',
+        };
       case 'ROJO':
         return {
           bg: 'bg-red-100',
           text: 'text-red-800',
           border: 'border-red-300',
-          label: 'URGENTE',
+          label: isAtrasada ? 'ATRASADO' : 'URGENTE',
         };
       case 'AMARILLO':
         return {
@@ -44,15 +53,24 @@ export function NeedBadge({ level, diasRestantes }: NeedBadgeProps) {
   };
 
   const styles = getStyles();
+  const diasLabel =
+    level !== 'COMPLETADA' && diasRestantes !== undefined
+      ? ` (${diasRestantes}d)`
+      : '';
 
   return (
     <span
       className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium border ${styles.bg} ${styles.text} ${styles.border}`}
-      title={diasRestantes !== undefined ? `${diasRestantes} días restantes` : undefined}
+      title={
+        level === 'COMPLETADA'
+          ? 'Mantención completada'
+          : diasRestantes !== undefined
+          ? `${diasRestantes} días restantes`
+          : undefined
+      }
     >
       {styles.label}
-      {diasRestantes !== undefined && ` (${diasRestantes}d)`}
+      {diasLabel}
     </span>
   );
 }
-

@@ -18,6 +18,7 @@ export interface FiltersState {
   equipo: string | 'Todos';
   repuesto: string | 'Todos';
   horizonte: '30d' | '90d' | '180d';
+  estadoMantencion: 'Todos' | 'pendiente' | 'completada' | 'atrasada';
 }
 
 export interface FiltersActions {
@@ -28,6 +29,7 @@ export interface FiltersActions {
   setEquipo: (equipo: string | 'Todos') => void;
   setRepuesto: (repuesto: string | 'Todos') => void;
   setHorizonte: (horizonte: '30d' | '90d' | '180d') => void;
+  setEstadoMantencion: (estadoMantencion: 'Todos' | 'pendiente' | 'completada' | 'atrasada') => void;
   resetFilters: () => void;
   toggleCategoria: (categoria: string) => void;
 }
@@ -46,6 +48,7 @@ const initialState: FiltersState = {
   equipo: 'Todos',
   repuesto: 'Todos',
   horizonte: '90d',
+  estadoMantencion: 'Todos',
 };
 
 // ===========================
@@ -134,6 +137,11 @@ export const useFiltersStore = create<FiltersStore>((set, get) => {
       saveFiltersToStorage(get());
     },
 
+    setEstadoMantencion: (estadoMantencion) => {
+      set({ estadoMantencion });
+      saveFiltersToStorage(get());
+    },
+
     resetFilters: () => {
       set(initialState);
       saveFiltersToStorage(initialState);
@@ -167,6 +175,7 @@ export function useFilters(): FiltersState {
     equipo: state.equipo,
     repuesto: state.repuesto,
     horizonte: state.horizonte,
+    estadoMantencion: state.estadoMantencion,
   }));
 }
 
@@ -182,6 +191,7 @@ export function useFiltersActions(): FiltersActions {
     setEquipo: state.setEquipo,
     setRepuesto: state.setRepuesto,
     setHorizonte: state.setHorizonte,
+    setEstadoMantencion: state.setEstadoMantencion,
     resetFilters: state.resetFilters,
     toggleCategoria: state.toggleCategoria,
   }));

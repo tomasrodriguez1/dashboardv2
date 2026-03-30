@@ -1,0 +1,3403 @@
+{
+  "CLIENTE": [
+    {
+      "cliente_id": "CL-VENTURA01",
+      "nombre": "Minera Los Andes"
+    },
+    {
+      "cliente_id": "CL-VENTURA02",
+      "nombre": "Minera Patagónica"
+    },
+    {
+      "cliente_id": "CL-VENTURA03",
+      "nombre": "Minera Sur"
+    },
+    {
+      "cliente_id": "CL-VENTURA04",
+      "nombre": "Ventura Mining"
+    },
+    {
+      "cliente_id": "CL-VENTURA05",
+      "nombre": "Altiplano Minerals"
+    },
+    {
+      "cliente_id": "CL-VENTURA06",
+      "nombre": "Norte Copper"
+    },
+    {
+      "cliente_id": "CL-VENTURA07",
+      "nombre": "Minera Austral"
+    },
+    {
+      "cliente_id": "CL-VENTURA08",
+      "nombre": "Minera Pacífico"
+    }
+  ],
+  "EQUIPO": [
+    {
+      "equipo_id": "EQ-3001",
+      "modelo": "CAT 320D",
+      "fabricante": "Caterpillar",
+      "serie": "CAT32D-2023-301",
+      "tasa_uso_horas_dia": 12,
+      "critico": true
+    },
+    {
+      "equipo_id": "EQ-3002",
+      "modelo": "Komatsu HD785-7",
+      "fabricante": "Komatsu",
+      "serie": "KOMHD785-2022-245",
+      "tasa_uso_horas_dia": 10,
+      "critico": true
+    },
+    {
+      "equipo_id": "EQ-3003",
+      "modelo": "Sandvik TH540",
+      "fabricante": "Sandvik",
+      "serie": "SANDTH540-2021-378",
+      "tasa_uso_horas_dia": 8,
+      "critico": true
+    },
+    {
+      "equipo_id": "EQ-3004",
+      "modelo": "Volvo L350H",
+      "fabricante": "Volvo",
+      "serie": "VOL-L350H-2024-411",
+      "tasa_uso_horas_dia": 6,
+      "critico": true
+    },
+    {
+      "equipo_id": "EQ-3005",
+      "modelo": "Hitachi EX1200",
+      "fabricante": "Hitachi",
+      "serie": "HIT-EX1200-2025-521",
+      "tasa_uso_horas_dia": 11,
+      "critico": true
+    },
+    {
+      "equipo_id": "EQ-3006",
+      "modelo": "CAT D10T2",
+      "fabricante": "Caterpillar",
+      "serie": "CATD10T2-2023-119",
+      "tasa_uso_horas_dia": 9,
+      "critico": true
+    },
+    {
+      "equipo_id": "EQ-3007",
+      "modelo": "Komatsu WA900-8",
+      "fabricante": "Komatsu",
+      "serie": "KOMWA900-2022-067",
+      "tasa_uso_horas_dia": 7,
+      "critico": true
+    },
+    {
+      "equipo_id": "EQ-3008",
+      "modelo": "Epiroc Boomer E2",
+      "fabricante": "Epiroc",
+      "serie": "EPR-BOOME2-2024-333",
+      "tasa_uso_horas_dia": 5,
+      "critico": true
+    },
+    {
+      "equipo_id": "EQ-3009",
+      "modelo": "Caterpillar D11T",
+      "fabricante": "Caterpillar",
+      "serie": "CATD11T-2025-901",
+      "tasa_uso_horas_dia": 8,
+      "critico": true
+    },
+    {
+      "equipo_id": "EQ-3010",
+      "modelo": "Epiroc Boomer E2",
+      "fabricante": "Epiroc",
+      "serie": "EPB-E2-2024-110",
+      "tasa_uso_horas_dia": 7,
+      "critico": true
+    }
+  ],
+  "CLIENTE_EQUIPO": [
+    {
+      "cliente_id": "CL-VENTURA01",
+      "equipo_id": "EQ-3001"
+    },
+    {
+      "cliente_id": "CL-VENTURA01",
+      "equipo_id": "EQ-3004"
+    },
+    {
+      "cliente_id": "CL-VENTURA02",
+      "equipo_id": "EQ-3002"
+    },
+    {
+      "cliente_id": "CL-VENTURA02",
+      "equipo_id": "EQ-3003"
+    },
+    {
+      "cliente_id": "CL-VENTURA04",
+      "equipo_id": "EQ-3005"
+    },
+    {
+      "cliente_id": "CL-VENTURA03",
+      "equipo_id": "EQ-3006"
+    },
+    {
+      "cliente_id": "CL-VENTURA05",
+      "equipo_id": "EQ-3007"
+    },
+    {
+      "cliente_id": "CL-VENTURA06",
+      "equipo_id": "EQ-3008"
+    },
+    {
+      "cliente_id": "CL-VENTURA07",
+      "equipo_id": "EQ-3009"
+    },
+    {
+      "cliente_id": "CL-VENTURA08",
+      "equipo_id": "EQ-3010"
+    }
+  ],
+  "REPUESTO": [
+    {
+      "repuesto_id": "RPT-001",
+      "descripcion": "Filtro de aceite hidráulico",
+      "stock_u": 18,
+      "punto_reorden": 10,
+      "proveedor": "Suministros Mineros S.A.",
+      "lead_time_dias": 7
+    },
+    {
+      "repuesto_id": "RPT-002",
+      "descripcion": "Kit pastillas de freno CAT 777F",
+      "stock_u": 6,
+      "punto_reorden": 8,
+      "proveedor": "Partes y Servicios CAT",
+      "lead_time_dias": 14
+    },
+    {
+      "repuesto_id": "RPT-003",
+      "descripcion": "Sensor de temperatura Volvo L120H",
+      "stock_u": 22,
+      "punto_reorden": 12,
+      "proveedor": "ElectroRepuestos Chile",
+      "lead_time_dias": 5
+    },
+    {
+      "repuesto_id": "RPT-004",
+      "descripcion": "Bomba de combustible Sandvik DP1500i",
+      "stock_u": 3,
+      "punto_reorden": 5,
+      "proveedor": "Repuestos Sandvik Ltda.",
+      "lead_time_dias": 21
+    },
+    {
+      "repuesto_id": "RPT-005",
+      "descripcion": "Sellos hidráulicos Hitachi ZX470",
+      "stock_u": 15,
+      "punto_reorden": 10,
+      "proveedor": "Hidráulica Total",
+      "lead_time_dias": 10
+    },
+    {
+      "repuesto_id": "RPT-006",
+      "descripcion": "Válvula control presión Liebherr PR776",
+      "stock_u": 8,
+      "punto_reorden": 6,
+      "proveedor": "TecnoMinería SpA",
+      "lead_time_dias": 18
+    },
+    {
+      "repuesto_id": "RPT-007",
+      "descripcion": "Filtro de aire estándar",
+      "stock_u": 25,
+      "punto_reorden": 12,
+      "proveedor": "AireClean Ltda.",
+      "lead_time_dias": 6
+    },
+    {
+      "repuesto_id": "RPT-008",
+      "descripcion": "Correa trapezoidal industrial",
+      "stock_u": 12,
+      "punto_reorden": 6,
+      "proveedor": "Correas Andinas",
+      "lead_time_dias": 9
+    },
+    {
+      "repuesto_id": "RPT-009",
+      "descripcion": "Radiador de alta eficiencia",
+      "stock_u": 4,
+      "punto_reorden": 3,
+      "proveedor": "CoolingPro",
+      "lead_time_dias": 20
+    },
+    {
+      "repuesto_id": "RPT-010",
+      "descripcion": "Manguera hidráulica HD 2\"",
+      "stock_u": 40,
+      "punto_reorden": 20,
+      "proveedor": "HidroFlex",
+      "lead_time_dias": 4
+    },
+    {
+      "repuesto_id": "RPT-011",
+      "descripcion": "Kit rodamiento rodillo guía",
+      "stock_u": 14,
+      "punto_reorden": 8,
+      "proveedor": "BearingMax",
+      "lead_time_dias": 12
+    },
+    {
+      "repuesto_id": "RPT-012",
+      "descripcion": "Filtro combustible primario",
+      "stock_u": 30,
+      "punto_reorden": 15,
+      "proveedor": "FuelClean",
+      "lead_time_dias": 5
+    },
+    {
+      "repuesto_id": "RPT-013",
+      "descripcion": "Aceite sintético 15W-40",
+      "stock_u": 200,
+      "punto_reorden": 100,
+      "proveedor": "LubriAndes",
+      "lead_time_dias": 3
+    },
+    {
+      "repuesto_id": "RPT-014",
+      "descripcion": "Filtro combustible secundario",
+      "stock_u": 24,
+      "punto_reorden": 13,
+      "proveedor": "Metso Outotec Parts",
+      "lead_time_dias": 3
+    },
+    {
+      "repuesto_id": "RPT-015",
+      "descripcion": "Filtro de aceite motor",
+      "stock_u": 25,
+      "punto_reorden": 19,
+      "proveedor": "LubriAndes",
+      "lead_time_dias": 6
+    },
+    {
+      "repuesto_id": "RPT-016",
+      "descripcion": "Filtro hidráulico de retorno",
+      "stock_u": 27,
+      "punto_reorden": 23,
+      "proveedor": "Hidráulica Total",
+      "lead_time_dias": 6
+    },
+    {
+      "repuesto_id": "RPT-017",
+      "descripcion": "Filtro de aire de cabina",
+      "stock_u": 49,
+      "punto_reorden": 14,
+      "proveedor": "Partes y Servicios CAT",
+      "lead_time_dias": 4
+    },
+    {
+      "repuesto_id": "RPT-018",
+      "descripcion": "Filtro de combustible diesel",
+      "stock_u": 38,
+      "punto_reorden": 16,
+      "proveedor": "Liebherr Repuestos",
+      "lead_time_dias": 4
+    },
+    {
+      "repuesto_id": "RPT-019",
+      "descripcion": "Filtro de aceite transmisión",
+      "stock_u": 33,
+      "punto_reorden": 15,
+      "proveedor": "Antofagasta Parts",
+      "lead_time_dias": 5
+    },
+    {
+      "repuesto_id": "RPT-020",
+      "descripcion": "Filtro de aire turbo",
+      "stock_u": 30,
+      "punto_reorden": 15,
+      "proveedor": "Hitachi Service",
+      "lead_time_dias": 5
+    },
+    {
+      "repuesto_id": "RPT-021",
+      "descripcion": "Cilindro hidráulico principal",
+      "stock_u": 20,
+      "punto_reorden": 9,
+      "proveedor": "Suministros Mineros S.A.",
+      "lead_time_dias": 9
+    },
+    {
+      "repuesto_id": "RPT-022",
+      "descripcion": "Bomba hidráulica variable",
+      "stock_u": 4,
+      "punto_reorden": 7,
+      "proveedor": "Correas Andinas",
+      "lead_time_dias": 14
+    },
+    {
+      "repuesto_id": "RPT-023",
+      "descripcion": "Válvula de alivio hidráulica",
+      "stock_u": 9,
+      "punto_reorden": 7,
+      "proveedor": "Hidráulica Total",
+      "lead_time_dias": 14
+    },
+    {
+      "repuesto_id": "RPT-024",
+      "descripcion": "Manguera hidráulica HD 1.5\"",
+      "stock_u": 6,
+      "punto_reorden": 7,
+      "proveedor": "Hitachi Service",
+      "lead_time_dias": 9
+    },
+    {
+      "repuesto_id": "RPT-025",
+      "descripcion": "Sello de pistón hidráulico",
+      "stock_u": 12,
+      "punto_reorden": 4,
+      "proveedor": "MineríaParts Chile",
+      "lead_time_dias": 13
+    },
+    {
+      "repuesto_id": "RPT-026",
+      "descripcion": "Válvula direccional hidráulica",
+      "stock_u": 13,
+      "punto_reorden": 8,
+      "proveedor": "Chilean Mining Supply",
+      "lead_time_dias": 5
+    },
+    {
+      "repuesto_id": "RPT-027",
+      "descripcion": "Filtro hidráulico de presión",
+      "stock_u": 5,
+      "punto_reorden": 6,
+      "proveedor": "HidroFlex",
+      "lead_time_dias": 15
+    },
+    {
+      "repuesto_id": "RPT-028",
+      "descripcion": "Bomba de engranajes hidráulica",
+      "stock_u": 3,
+      "punto_reorden": 6,
+      "proveedor": "Correas Andinas",
+      "lead_time_dias": 10
+    },
+    {
+      "repuesto_id": "RPT-029",
+      "descripcion": "Cilindro hidráulico de elevación",
+      "stock_u": 6,
+      "punto_reorden": 4,
+      "proveedor": "CoolingPro",
+      "lead_time_dias": 10
+    },
+    {
+      "repuesto_id": "RPT-030",
+      "descripcion": "Válvula de control proporcional",
+      "stock_u": 20,
+      "punto_reorden": 5,
+      "proveedor": "Correas Andinas",
+      "lead_time_dias": 5
+    },
+    {
+      "repuesto_id": "RPT-031",
+      "descripcion": "Manguera hidráulica HD 3\"",
+      "stock_u": 9,
+      "punto_reorden": 8,
+      "proveedor": "Repuestos Komatsu",
+      "lead_time_dias": 13
+    },
+    {
+      "repuesto_id": "RPT-032",
+      "descripcion": "Pastillas de freno delanteras",
+      "stock_u": 12,
+      "punto_reorden": 4,
+      "proveedor": "LubriAndes",
+      "lead_time_dias": 18
+    },
+    {
+      "repuesto_id": "RPT-033",
+      "descripcion": "Pastillas de freno traseras",
+      "stock_u": 9,
+      "punto_reorden": 8,
+      "proveedor": "Repuestos Mineros Premium",
+      "lead_time_dias": 13
+    },
+    {
+      "repuesto_id": "RPT-034",
+      "descripcion": "Disco de freno delantero",
+      "stock_u": 5,
+      "punto_reorden": 6,
+      "proveedor": "MineríaParts Chile",
+      "lead_time_dias": 17
+    },
+    {
+      "repuesto_id": "RPT-035",
+      "descripcion": "Disco de freno trasero",
+      "stock_u": 12,
+      "punto_reorden": 8,
+      "proveedor": "Repuestos BHP",
+      "lead_time_dias": 8
+    },
+    {
+      "repuesto_id": "RPT-036",
+      "descripcion": "Cilindro de freno maestro",
+      "stock_u": 11,
+      "punto_reorden": 6,
+      "proveedor": "Hitachi Service",
+      "lead_time_dias": 16
+    },
+    {
+      "repuesto_id": "RPT-037",
+      "descripcion": "Líquido de frenos DOT 4",
+      "stock_u": 12,
+      "punto_reorden": 3,
+      "proveedor": "Epiroc Chile",
+      "lead_time_dias": 14
+    },
+    {
+      "repuesto_id": "RPT-038",
+      "descripcion": "Sensor de desgaste de pastillas",
+      "stock_u": 4,
+      "punto_reorden": 4,
+      "proveedor": "Minería del Norte",
+      "lead_time_dias": 17
+    },
+    {
+      "repuesto_id": "RPT-039",
+      "descripcion": "Kit de reparación de frenos",
+      "stock_u": 12,
+      "punto_reorden": 4,
+      "proveedor": "LubriAndes",
+      "lead_time_dias": 17
+    },
+    {
+      "repuesto_id": "RPT-040",
+      "descripcion": "Pastillas de freno cerámicas",
+      "stock_u": 4,
+      "punto_reorden": 5,
+      "proveedor": "MineríaParts Chile",
+      "lead_time_dias": 12
+    },
+    {
+      "repuesto_id": "RPT-041",
+      "descripcion": "Correa de distribución",
+      "stock_u": 14,
+      "punto_reorden": 7,
+      "proveedor": "Antofagasta Parts",
+      "lead_time_dias": 7
+    },
+    {
+      "repuesto_id": "RPT-042",
+      "descripcion": "Correa de alternador",
+      "stock_u": 15,
+      "punto_reorden": 7,
+      "proveedor": "Patagonia Mining Parts",
+      "lead_time_dias": 12
+    },
+    {
+      "repuesto_id": "RPT-043",
+      "descripcion": "Correa de bomba de agua",
+      "stock_u": 18,
+      "punto_reorden": 10,
+      "proveedor": "Chilean Mining Supply",
+      "lead_time_dias": 5
+    },
+    {
+      "repuesto_id": "RPT-044",
+      "descripcion": "Correa de compresor A/C",
+      "stock_u": 17,
+      "punto_reorden": 4,
+      "proveedor": "FLSmidth Chile",
+      "lead_time_dias": 10
+    },
+    {
+      "repuesto_id": "RPT-045",
+      "descripcion": "Correa de dirección asistida",
+      "stock_u": 23,
+      "punto_reorden": 11,
+      "proveedor": "Repuestos Komatsu",
+      "lead_time_dias": 10
+    },
+    {
+      "repuesto_id": "RPT-046",
+      "descripcion": "Correa de ventilador",
+      "stock_u": 23,
+      "punto_reorden": 11,
+      "proveedor": "Antofagasta Parts",
+      "lead_time_dias": 11
+    },
+    {
+      "repuesto_id": "RPT-047",
+      "descripcion": "Correa de bomba hidráulica",
+      "stock_u": 21,
+      "punto_reorden": 7,
+      "proveedor": "Atacama Repuestos",
+      "lead_time_dias": 8
+    },
+    {
+      "repuesto_id": "RPT-048",
+      "descripcion": "Correa de transmisión",
+      "stock_u": 14,
+      "punto_reorden": 12,
+      "proveedor": "Repuestos Andinos",
+      "lead_time_dias": 8
+    },
+    {
+      "repuesto_id": "RPT-049",
+      "descripcion": "Correa de accesorios",
+      "stock_u": 10,
+      "punto_reorden": 7,
+      "proveedor": "BearingMax",
+      "lead_time_dias": 9
+    },
+    {
+      "repuesto_id": "RPT-050",
+      "descripcion": "Sensor de presión de aceite",
+      "stock_u": 29,
+      "punto_reorden": 15,
+      "proveedor": "CoolingPro",
+      "lead_time_dias": 5
+    },
+    {
+      "repuesto_id": "RPT-051",
+      "descripcion": "Sensor de nivel de combustible",
+      "stock_u": 24,
+      "punto_reorden": 15,
+      "proveedor": "Atacama Repuestos",
+      "lead_time_dias": 9
+    },
+    {
+      "repuesto_id": "RPT-052",
+      "descripcion": "Sensor de temperatura motor",
+      "stock_u": 27,
+      "punto_reorden": 10,
+      "proveedor": "Volvo Parts Chile",
+      "lead_time_dias": 6
+    },
+    {
+      "repuesto_id": "RPT-053",
+      "descripcion": "Sensor de velocidad",
+      "stock_u": 22,
+      "punto_reorden": 9,
+      "proveedor": "Partes y Servicios CAT",
+      "lead_time_dias": 4
+    },
+    {
+      "repuesto_id": "RPT-054",
+      "descripcion": "Sensor de posición del acelerador",
+      "stock_u": 14,
+      "punto_reorden": 15,
+      "proveedor": "HidroFlex",
+      "lead_time_dias": 4
+    },
+    {
+      "repuesto_id": "RPT-055",
+      "descripcion": "Sensor de oxígeno",
+      "stock_u": 16,
+      "punto_reorden": 8,
+      "proveedor": "Metso Outotec Parts",
+      "lead_time_dias": 5
+    },
+    {
+      "repuesto_id": "RPT-056",
+      "descripcion": "Sensor de presión de neumáticos",
+      "stock_u": 11,
+      "punto_reorden": 10,
+      "proveedor": "Correas Andinas",
+      "lead_time_dias": 6
+    },
+    {
+      "repuesto_id": "RPT-057",
+      "descripcion": "Sensor de temperatura hidráulica",
+      "stock_u": 15,
+      "punto_reorden": 5,
+      "proveedor": "Hidráulica Total",
+      "lead_time_dias": 5
+    },
+    {
+      "repuesto_id": "RPT-058",
+      "descripcion": "Sensor de flujo de aire",
+      "stock_u": 30,
+      "punto_reorden": 10,
+      "proveedor": "Atacama Repuestos",
+      "lead_time_dias": 6
+    },
+    {
+      "repuesto_id": "RPT-059",
+      "descripcion": "Rodamiento de rueda delantera",
+      "stock_u": 17,
+      "punto_reorden": 6,
+      "proveedor": "Repuestos Andinos",
+      "lead_time_dias": 12
+    },
+    {
+      "repuesto_id": "RPT-060",
+      "descripcion": "Rodamiento de rueda trasera",
+      "stock_u": 13,
+      "punto_reorden": 9,
+      "proveedor": "CoolingPro",
+      "lead_time_dias": 18
+    },
+    {
+      "repuesto_id": "RPT-061",
+      "descripcion": "Rodamiento de transmisión",
+      "stock_u": 11,
+      "punto_reorden": 5,
+      "proveedor": "Minería del Norte",
+      "lead_time_dias": 18
+    },
+    {
+      "repuesto_id": "RPT-062",
+      "descripcion": "Rodamiento de alternador",
+      "stock_u": 6,
+      "punto_reorden": 7,
+      "proveedor": "TecnoMinería SpA",
+      "lead_time_dias": 8
+    },
+    {
+      "repuesto_id": "RPT-063",
+      "descripcion": "Rodamiento de bomba hidráulica",
+      "stock_u": 9,
+      "punto_reorden": 9,
+      "proveedor": "MineríaParts Chile",
+      "lead_time_dias": 14
+    },
+    {
+      "repuesto_id": "RPT-064",
+      "descripcion": "Rodamiento de ventilador",
+      "stock_u": 17,
+      "punto_reorden": 5,
+      "proveedor": "Atacama Repuestos",
+      "lead_time_dias": 16
+    },
+    {
+      "repuesto_id": "RPT-065",
+      "descripcion": "Rodamiento de compresor",
+      "stock_u": 16,
+      "punto_reorden": 9,
+      "proveedor": "Codelco Repuestos",
+      "lead_time_dias": 9
+    },
+    {
+      "repuesto_id": "RPT-066",
+      "descripcion": "Rodamiento de eje principal",
+      "stock_u": 17,
+      "punto_reorden": 8,
+      "proveedor": "Hidráulica Total",
+      "lead_time_dias": 11
+    },
+    {
+      "repuesto_id": "RPT-067",
+      "descripcion": "Rodamiento de dirección",
+      "stock_u": 12,
+      "punto_reorden": 5,
+      "proveedor": "Codelco Repuestos",
+      "lead_time_dias": 11
+    },
+    {
+      "repuesto_id": "RPT-068",
+      "descripcion": "Radiador de aceite",
+      "stock_u": 11,
+      "punto_reorden": 5,
+      "proveedor": "ElectroRepuestos Chile",
+      "lead_time_dias": 20
+    },
+    {
+      "repuesto_id": "RPT-069",
+      "descripcion": "Radiador de transmisión",
+      "stock_u": 2,
+      "punto_reorden": 2,
+      "proveedor": "Codelco Repuestos",
+      "lead_time_dias": 12
+    },
+    {
+      "repuesto_id": "RPT-070",
+      "descripcion": "Ventilador de enfriamiento",
+      "stock_u": 2,
+      "punto_reorden": 2,
+      "proveedor": "Metso Outotec Parts",
+      "lead_time_dias": 18
+    },
+    {
+      "repuesto_id": "RPT-071",
+      "descripcion": "Termostato de motor",
+      "stock_u": 5,
+      "punto_reorden": 1,
+      "proveedor": "Codelco Repuestos",
+      "lead_time_dias": 16
+    },
+    {
+      "repuesto_id": "RPT-072",
+      "descripcion": "Bomba de agua",
+      "stock_u": 6,
+      "punto_reorden": 2,
+      "proveedor": "Repuestos BHP",
+      "lead_time_dias": 23
+    },
+    {
+      "repuesto_id": "RPT-073",
+      "descripcion": "Manguera de refrigerante",
+      "stock_u": 10,
+      "punto_reorden": 4,
+      "proveedor": "Correas Andinas",
+      "lead_time_dias": 23
+    },
+    {
+      "repuesto_id": "RPT-074",
+      "descripcion": "Líquido refrigerante",
+      "stock_u": 5,
+      "punto_reorden": 6,
+      "proveedor": "Atacama Repuestos",
+      "lead_time_dias": 13
+    },
+    {
+      "repuesto_id": "RPT-075",
+      "descripcion": "Intercooler",
+      "stock_u": 3,
+      "punto_reorden": 6,
+      "proveedor": "Hidráulica Total",
+      "lead_time_dias": 23
+    },
+    {
+      "repuesto_id": "RPT-076",
+      "descripcion": "Radiador de aire acondicionado",
+      "stock_u": 10,
+      "punto_reorden": 1,
+      "proveedor": "HidroFlex",
+      "lead_time_dias": 24
+    },
+    {
+      "repuesto_id": "RPT-077",
+      "descripcion": "Aceite hidráulico ISO 46",
+      "stock_u": 153,
+      "punto_reorden": 140,
+      "proveedor": "Repuestos Mineros Premium",
+      "lead_time_dias": 3
+    },
+    {
+      "repuesto_id": "RPT-078",
+      "descripcion": "Aceite de transmisión",
+      "stock_u": 186,
+      "punto_reorden": 88,
+      "proveedor": "Patagonia Mining Parts",
+      "lead_time_dias": 7
+    },
+    {
+      "repuesto_id": "RPT-079",
+      "descripcion": "Grasa multipropósito",
+      "stock_u": 264,
+      "punto_reorden": 80,
+      "proveedor": "Metso Outotec Parts",
+      "lead_time_dias": 6
+    },
+    {
+      "repuesto_id": "RPT-080",
+      "descripcion": "Aceite de diferencial",
+      "stock_u": 156,
+      "punto_reorden": 79,
+      "proveedor": "Repuestos Komatsu",
+      "lead_time_dias": 4
+    },
+    {
+      "repuesto_id": "RPT-081",
+      "descripcion": "Aceite de motor 10W-30",
+      "stock_u": 185,
+      "punto_reorden": 69,
+      "proveedor": "BearingMax",
+      "lead_time_dias": 4
+    },
+    {
+      "repuesto_id": "RPT-082",
+      "descripcion": "Aceite hidráulico ISO 32",
+      "stock_u": 275,
+      "punto_reorden": 92,
+      "proveedor": "BearingMax",
+      "lead_time_dias": 2
+    },
+    {
+      "repuesto_id": "RPT-083",
+      "descripcion": "Grasa de alta temperatura",
+      "stock_u": 130,
+      "punto_reorden": 49,
+      "proveedor": "Antofagasta Parts",
+      "lead_time_dias": 2
+    },
+    {
+      "repuesto_id": "RPT-084",
+      "descripcion": "Aceite de motor 5W-40",
+      "stock_u": 264,
+      "punto_reorden": 61,
+      "proveedor": "Codelco Repuestos",
+      "lead_time_dias": 6
+    },
+    {
+      "repuesto_id": "RPT-085",
+      "descripcion": "Aceite hidráulico ISO 68",
+      "stock_u": 300,
+      "punto_reorden": 27,
+      "proveedor": "Antofagasta Parts",
+      "lead_time_dias": 5
+    },
+    {
+      "repuesto_id": "RPT-086",
+      "descripcion": "Alternador 24V 150A",
+      "stock_u": 15,
+      "punto_reorden": 6,
+      "proveedor": "Hidráulica Total",
+      "lead_time_dias": 8
+    },
+    {
+      "repuesto_id": "RPT-087",
+      "descripcion": "Motor de arranque 24V",
+      "stock_u": 5,
+      "punto_reorden": 2,
+      "proveedor": "ElectroRepuestos Chile",
+      "lead_time_dias": 12
+    },
+    {
+      "repuesto_id": "RPT-088",
+      "descripcion": "Batería 12V 100Ah",
+      "stock_u": 17,
+      "punto_reorden": 8,
+      "proveedor": "Chilean Mining Supply",
+      "lead_time_dias": 10
+    },
+    {
+      "repuesto_id": "RPT-089",
+      "descripcion": "Fusible de 30A",
+      "stock_u": 13,
+      "punto_reorden": 8,
+      "proveedor": "Metso Outotec Parts",
+      "lead_time_dias": 9
+    },
+    {
+      "repuesto_id": "RPT-090",
+      "descripcion": "Relé de arranque",
+      "stock_u": 7,
+      "punto_reorden": 9,
+      "proveedor": "FuelClean",
+      "lead_time_dias": 6
+    },
+    {
+      "repuesto_id": "RPT-091",
+      "descripcion": "Cable de batería 25mm²",
+      "stock_u": 6,
+      "punto_reorden": 6,
+      "proveedor": "Minería del Norte",
+      "lead_time_dias": 10
+    },
+    {
+      "repuesto_id": "RPT-092",
+      "descripcion": "Lámpara de trabajo LED",
+      "stock_u": 20,
+      "punto_reorden": 6,
+      "proveedor": "Suministros Mineros S.A.",
+      "lead_time_dias": 9
+    },
+    {
+      "repuesto_id": "RPT-093",
+      "descripcion": "Interruptor principal",
+      "stock_u": 6,
+      "punto_reorden": 2,
+      "proveedor": "Correas Andinas",
+      "lead_time_dias": 4
+    },
+    {
+      "repuesto_id": "RPT-094",
+      "descripcion": "Cable de tierra",
+      "stock_u": 9,
+      "punto_reorden": 7,
+      "proveedor": "Hidráulica Total",
+      "lead_time_dias": 7
+    },
+    {
+      "repuesto_id": "RPT-095",
+      "descripcion": "Conector eléctrico",
+      "stock_u": 12,
+      "punto_reorden": 2,
+      "proveedor": "Codelco Repuestos",
+      "lead_time_dias": 9
+    },
+    {
+      "repuesto_id": "RPT-096",
+      "descripcion": "Neumático 23.5R25",
+      "stock_u": 7,
+      "punto_reorden": 1,
+      "proveedor": "Repuestos Sandvik Ltda.",
+      "lead_time_dias": 19
+    },
+    {
+      "repuesto_id": "RPT-097",
+      "descripcion": "Neumático 26.5R25",
+      "stock_u": 4,
+      "punto_reorden": 3,
+      "proveedor": "LubriAndes",
+      "lead_time_dias": 30
+    },
+    {
+      "repuesto_id": "RPT-098",
+      "descripcion": "Neumático 29.5R25",
+      "stock_u": 6,
+      "punto_reorden": 1,
+      "proveedor": "Repuestos Komatsu",
+      "lead_time_dias": 18
+    },
+    {
+      "repuesto_id": "RPT-099",
+      "descripcion": "Cámara de aire 23.5R25",
+      "stock_u": 4,
+      "punto_reorden": 1,
+      "proveedor": "Partes y Servicios CAT",
+      "lead_time_dias": 21
+    },
+    {
+      "repuesto_id": "RPT-100",
+      "descripcion": "Cámara de aire 26.5R25",
+      "stock_u": 4,
+      "punto_reorden": 3,
+      "proveedor": "LubriAndes",
+      "lead_time_dias": 28
+    },
+    {
+      "repuesto_id": "RPT-101",
+      "descripcion": "Válvula de neumático",
+      "stock_u": 8,
+      "punto_reorden": 4,
+      "proveedor": "Hitachi Service",
+      "lead_time_dias": 26
+    },
+    {
+      "repuesto_id": "RPT-102",
+      "descripcion": "Parche para neumático",
+      "stock_u": 5,
+      "punto_reorden": 4,
+      "proveedor": "Patagonia Mining Parts",
+      "lead_time_dias": 28
+    },
+    {
+      "repuesto_id": "RPT-103",
+      "descripcion": "Líquido sellador",
+      "stock_u": 4,
+      "punto_reorden": 2,
+      "proveedor": "Hidráulica Total",
+      "lead_time_dias": 30
+    },
+    {
+      "repuesto_id": "RPT-104",
+      "descripcion": "Neumático 17.5R25",
+      "stock_u": 8,
+      "punto_reorden": 3,
+      "proveedor": "LubriAndes",
+      "lead_time_dias": 32
+    },
+    {
+      "repuesto_id": "RPT-105",
+      "descripcion": "Neumático 20.5R25",
+      "stock_u": 4,
+      "punto_reorden": 2,
+      "proveedor": "Liebherr Repuestos",
+      "lead_time_dias": 44
+    },
+    {
+      "repuesto_id": "RPT-106",
+      "descripcion": "Martillo hidráulico para excavadora",
+      "stock_u": 7,
+      "punto_reorden": 10,
+      "proveedor": "FLSmidth Chile",
+      "lead_time_dias": 15
+    },
+    {
+      "repuesto_id": "RPT-107",
+      "descripcion": "Cuchara de excavación 2.5m³",
+      "stock_u": 17,
+      "punto_reorden": 6,
+      "proveedor": "Patagonia Mining Parts",
+      "lead_time_dias": 19
+    },
+    {
+      "repuesto_id": "RPT-108",
+      "descripcion": "Diente de cuchara estándar",
+      "stock_u": 14,
+      "punto_reorden": 8,
+      "proveedor": "Suministros Mineros S.A.",
+      "lead_time_dias": 20
+    },
+    {
+      "repuesto_id": "RPT-109",
+      "descripcion": "Kit de reparación de motor",
+      "stock_u": 10,
+      "punto_reorden": 4,
+      "proveedor": "Antofagasta Parts",
+      "lead_time_dias": 12
+    },
+    {
+      "repuesto_id": "RPT-110",
+      "descripcion": "Filtro de partículas diesel",
+      "stock_u": 7,
+      "punto_reorden": 11,
+      "proveedor": "Epiroc Chile",
+      "lead_time_dias": 13
+    },
+    {
+      "repuesto_id": "RPT-111",
+      "descripcion": "Aditivo para combustible",
+      "stock_u": 23,
+      "punto_reorden": 9,
+      "proveedor": "TecnoMinería SpA",
+      "lead_time_dias": 14
+    },
+    {
+      "repuesto_id": "RPT-112",
+      "descripcion": "Lubricante para cadenas",
+      "stock_u": 5,
+      "punto_reorden": 1,
+      "proveedor": "Patagonia Mining Parts",
+      "lead_time_dias": 14
+    },
+    {
+      "repuesto_id": "RPT-113",
+      "descripcion": "Kit de reparación de transmisión",
+      "stock_u": 21,
+      "punto_reorden": 12,
+      "proveedor": "LubriAndes",
+      "lead_time_dias": 19
+    },
+    {
+      "repuesto_id": "RPT-114",
+      "descripcion": "Filtro de aceite de motor",
+      "stock_u": 17,
+      "punto_reorden": 5,
+      "proveedor": "Minería del Norte",
+      "lead_time_dias": 12
+    },
+    {
+      "repuesto_id": "RPT-115",
+      "descripcion": "Sensor de nivel de aceite",
+      "stock_u": 15,
+      "punto_reorden": 7,
+      "proveedor": "TecnoMinería SpA",
+      "lead_time_dias": 18
+    },
+    {
+      "repuesto_id": "RPT-116",
+      "descripcion": "Termostato de motor",
+      "stock_u": 3,
+      "punto_reorden": 5,
+      "proveedor": "Suministros Mineros S.A.",
+      "lead_time_dias": 16
+    },
+    {
+      "repuesto_id": "RPT-117",
+      "descripcion": "Bomba de combustible eléctrica",
+      "stock_u": 6,
+      "punto_reorden": 10,
+      "proveedor": "Correas Andinas",
+      "lead_time_dias": 12
+    },
+    {
+      "repuesto_id": "RPT-118",
+      "descripcion": "Filtro de aire de cabina",
+      "stock_u": 24,
+      "punto_reorden": 1,
+      "proveedor": "Repuestos BHP",
+      "lead_time_dias": 8
+    },
+    {
+      "repuesto_id": "RPT-119",
+      "descripcion": "Lámpara de trabajo halógena",
+      "stock_u": 10,
+      "punto_reorden": 3,
+      "proveedor": "HidroFlex",
+      "lead_time_dias": 6
+    },
+    {
+      "repuesto_id": "RPT-120",
+      "descripcion": "Cable de carga 50mm²",
+      "stock_u": 18,
+      "punto_reorden": 8,
+      "proveedor": "Hitachi Service",
+      "lead_time_dias": 14
+    },
+    {
+      "repuesto_id": "RPT-121",
+      "descripcion": "Conector de carga rápido",
+      "stock_u": 15,
+      "punto_reorden": 9,
+      "proveedor": "FLSmidth Chile",
+      "lead_time_dias": 18
+    },
+    {
+      "repuesto_id": "RPT-122",
+      "descripcion": "Kit de reparación de frenos de estacionamiento",
+      "stock_u": 14,
+      "punto_reorden": 2,
+      "proveedor": "TecnoMinería SpA",
+      "lead_time_dias": 8
+    },
+    {
+      "repuesto_id": "RPT-123",
+      "descripcion": "Pastillas de freno de estacionamiento",
+      "stock_u": 8,
+      "punto_reorden": 6,
+      "proveedor": "MineríaParts Chile",
+      "lead_time_dias": 12
+    },
+    {
+      "repuesto_id": "RPT-124",
+      "descripcion": "Cable de freno de estacionamiento",
+      "stock_u": 10,
+      "punto_reorden": 1,
+      "proveedor": "Hitachi Service",
+      "lead_time_dias": 7
+    },
+    {
+      "repuesto_id": "RPT-125",
+      "descripcion": "Kit de reparación de dirección",
+      "stock_u": 17,
+      "punto_reorden": 7,
+      "proveedor": "ElectroRepuestos Chile",
+      "lead_time_dias": 16
+    },
+    {
+      "repuesto_id": "RPT-126",
+      "descripcion": "Bomba de dirección asistida",
+      "stock_u": 12,
+      "punto_reorden": 5,
+      "proveedor": "Volvo Parts Chile",
+      "lead_time_dias": 8
+    },
+    {
+      "repuesto_id": "RPT-127",
+      "descripcion": "Filtro de dirección asistida",
+      "stock_u": 6,
+      "punto_reorden": 11,
+      "proveedor": "Minería del Norte",
+      "lead_time_dias": 11
+    },
+    {
+      "repuesto_id": "RPT-128",
+      "descripcion": "Líquido de dirección asistida",
+      "stock_u": 15,
+      "punto_reorden": 4,
+      "proveedor": "AireClean Ltda.",
+      "lead_time_dias": 19
+    },
+    {
+      "repuesto_id": "RPT-129",
+      "descripcion": "Kit de reparación de suspensión",
+      "stock_u": 23,
+      "punto_reorden": 4,
+      "proveedor": "Liebherr Repuestos",
+      "lead_time_dias": 11
+    },
+    {
+      "repuesto_id": "RPT-130",
+      "descripcion": "Amortiguador delantero",
+      "stock_u": 17,
+      "punto_reorden": 5,
+      "proveedor": "Chilean Mining Supply",
+      "lead_time_dias": 12
+    },
+    {
+      "repuesto_id": "RPT-131",
+      "descripcion": "Amortiguador trasero",
+      "stock_u": 16,
+      "punto_reorden": 5,
+      "proveedor": "Hitachi Service",
+      "lead_time_dias": 13
+    },
+    {
+      "repuesto_id": "RPT-132",
+      "descripcion": "Resorte de suspensión",
+      "stock_u": 7,
+      "punto_reorden": 2,
+      "proveedor": "Repuestos Komatsu",
+      "lead_time_dias": 19
+    },
+    {
+      "repuesto_id": "RPT-133",
+      "descripcion": "Kit de reparación de neumáticos",
+      "stock_u": 5,
+      "punto_reorden": 6,
+      "proveedor": "Partes y Servicios CAT",
+      "lead_time_dias": 6
+    },
+    {
+      "repuesto_id": "RPT-134",
+      "descripcion": "Válvula de neumático de alta presión",
+      "stock_u": 18,
+      "punto_reorden": 4,
+      "proveedor": "Antofagasta Parts",
+      "lead_time_dias": 6
+    },
+    {
+      "repuesto_id": "RPT-135",
+      "descripcion": "Kit de reparación de ruedas",
+      "stock_u": 10,
+      "punto_reorden": 1,
+      "proveedor": "Metso Outotec Parts",
+      "lead_time_dias": 14
+    },
+    {
+      "repuesto_id": "RPT-136",
+      "descripcion": "Kit sellos para tractor oruga D11T",
+      "stock_u": 4,
+      "punto_reorden": 2,
+      "proveedor": "Caterpillar Parts Chile",
+      "lead_time_dias": 18
+    },
+    {
+      "repuesto_id": "RPT-137",
+      "descripcion": "Rodamiento de rodillos D11T",
+      "stock_u": 6,
+      "punto_reorden": 3,
+      "proveedor": "Rodamientos del Sur",
+      "lead_time_dias": 12
+    },
+    {
+      "repuesto_id": "RPT-138",
+      "descripcion": "Engranaje de transmisión oruga D11",
+      "stock_u": 2,
+      "punto_reorden": 1,
+      "proveedor": "Transmisiones Austrom",
+      "lead_time_dias": 25
+    },
+    {
+      "repuesto_id": "RPT-139",
+      "descripcion": "Cabezal de martillo Epiroc Boomer",
+      "stock_u": 5,
+      "punto_reorden": 2,
+      "proveedor": "Epiroc Plus",
+      "lead_time_dias": 15
+    },
+    {
+      "repuesto_id": "RPT-140",
+      "descripcion": "Manga de perforación E2",
+      "stock_u": 7,
+      "punto_reorden": 3,
+      "proveedor": "Forjas Austral",
+      "lead_time_dias": 20
+    }
+  ],
+  "PLAN_MANTENIMIENTO": [
+    {
+      "plan_id": "PM-EXCAV-STD",
+      "familia": "Excavadoras",
+      "actividad": "Servicio excavadora y lubricación"
+    },
+    {
+      "plan_id": "PM-TRUCK-STD",
+      "familia": "Camiones Mineros",
+      "actividad": "Servicio camión minero (hidráulico/frenos)"
+    },
+    {
+      "plan_id": "PM-LOADER-STD",
+      "familia": "Cargadores Frontales",
+      "actividad": "Servicio cargador frontal (correas/sensores)"
+    },
+    {
+      "plan_id": "PM-DOZER-STD",
+      "familia": "Tractores Oruga",
+      "actividad": "Servicio tractor oruga (rodaje/enfriamiento)"
+    },
+    {
+      "plan_id": "PM-DRILL-STD",
+      "familia": "Perforadoras",
+      "actividad": "Servicio perforadora (martillo/circulación)"
+    }
+  ],
+  "PLAN_EQUIPO_HITO": [
+    {
+      "peh_id": "PEH-0001",
+      "plan_id": "PM-EXCAV-STD",
+      "equipo_id": "EQ-3001",
+      "horas": 200
+    },
+    {
+      "peh_id": "PEH-0002",
+      "plan_id": "PM-EXCAV-STD",
+      "equipo_id": "EQ-3001",
+      "horas": 400
+    },
+    {
+      "peh_id": "PEH-0003",
+      "plan_id": "PM-EXCAV-STD",
+      "equipo_id": "EQ-3001",
+      "horas": 800
+    },
+    {
+      "peh_id": "PEH-0004",
+      "plan_id": "PM-EXCAV-STD",
+      "equipo_id": "EQ-3001",
+      "horas": 1000
+    },
+    {
+      "peh_id": "PEH-0005",
+      "plan_id": "PM-EXCAV-STD",
+      "equipo_id": "EQ-3001",
+      "horas": 1200
+    },
+    {
+      "peh_id": "PEH-0006",
+      "plan_id": "PM-TRUCK-STD",
+      "equipo_id": "EQ-3002",
+      "horas": 200
+    },
+    {
+      "peh_id": "PEH-0007",
+      "plan_id": "PM-TRUCK-STD",
+      "equipo_id": "EQ-3002",
+      "horas": 400
+    },
+    {
+      "peh_id": "PEH-0008",
+      "plan_id": "PM-TRUCK-STD",
+      "equipo_id": "EQ-3002",
+      "horas": 800
+    },
+    {
+      "peh_id": "PEH-0009",
+      "plan_id": "PM-TRUCK-STD",
+      "equipo_id": "EQ-3002",
+      "horas": 1000
+    },
+    {
+      "peh_id": "PEH-0010",
+      "plan_id": "PM-TRUCK-STD",
+      "equipo_id": "EQ-3002",
+      "horas": 1200
+    },
+    {
+      "peh_id": "PEH-0011",
+      "plan_id": "PM-TRUCK-STD",
+      "equipo_id": "EQ-3003",
+      "horas": 200
+    },
+    {
+      "peh_id": "PEH-0012",
+      "plan_id": "PM-TRUCK-STD",
+      "equipo_id": "EQ-3003",
+      "horas": 400
+    },
+    {
+      "peh_id": "PEH-0013",
+      "plan_id": "PM-TRUCK-STD",
+      "equipo_id": "EQ-3003",
+      "horas": 800
+    },
+    {
+      "peh_id": "PEH-0014",
+      "plan_id": "PM-TRUCK-STD",
+      "equipo_id": "EQ-3003",
+      "horas": 1000
+    },
+    {
+      "peh_id": "PEH-0015",
+      "plan_id": "PM-TRUCK-STD",
+      "equipo_id": "EQ-3003",
+      "horas": 1200
+    },
+    {
+      "peh_id": "PEH-0016",
+      "plan_id": "PM-LOADER-STD",
+      "equipo_id": "EQ-3004",
+      "horas": 200
+    },
+    {
+      "peh_id": "PEH-0017",
+      "plan_id": "PM-LOADER-STD",
+      "equipo_id": "EQ-3004",
+      "horas": 400
+    },
+    {
+      "peh_id": "PEH-0018",
+      "plan_id": "PM-LOADER-STD",
+      "equipo_id": "EQ-3004",
+      "horas": 800
+    },
+    {
+      "peh_id": "PEH-0019",
+      "plan_id": "PM-LOADER-STD",
+      "equipo_id": "EQ-3004",
+      "horas": 1000
+    },
+    {
+      "peh_id": "PEH-0020",
+      "plan_id": "PM-LOADER-STD",
+      "equipo_id": "EQ-3004",
+      "horas": 1200
+    },
+    {
+      "peh_id": "PEH-0021",
+      "plan_id": "PM-EXCAV-STD",
+      "equipo_id": "EQ-3005",
+      "horas": 200
+    },
+    {
+      "peh_id": "PEH-0022",
+      "plan_id": "PM-EXCAV-STD",
+      "equipo_id": "EQ-3005",
+      "horas": 400
+    },
+    {
+      "peh_id": "PEH-0023",
+      "plan_id": "PM-EXCAV-STD",
+      "equipo_id": "EQ-3005",
+      "horas": 800
+    },
+    {
+      "peh_id": "PEH-0024",
+      "plan_id": "PM-EXCAV-STD",
+      "equipo_id": "EQ-3005",
+      "horas": 1000
+    },
+    {
+      "peh_id": "PEH-0025",
+      "plan_id": "PM-EXCAV-STD",
+      "equipo_id": "EQ-3005",
+      "horas": 1200
+    },
+    {
+      "peh_id": "PEH-0026",
+      "plan_id": "PM-DOZER-STD",
+      "equipo_id": "EQ-3006",
+      "horas": 250
+    },
+    {
+      "peh_id": "PEH-0027",
+      "plan_id": "PM-DOZER-STD",
+      "equipo_id": "EQ-3006",
+      "horas": 500
+    },
+    {
+      "peh_id": "PEH-0028",
+      "plan_id": "PM-DOZER-STD",
+      "equipo_id": "EQ-3006",
+      "horas": 1000
+    },
+    {
+      "peh_id": "PEH-0029",
+      "plan_id": "PM-LOADER-STD",
+      "equipo_id": "EQ-3007",
+      "horas": 200
+    },
+    {
+      "peh_id": "PEH-0030",
+      "plan_id": "PM-LOADER-STD",
+      "equipo_id": "EQ-3007",
+      "horas": 400
+    },
+    {
+      "peh_id": "PEH-0031",
+      "plan_id": "PM-LOADER-STD",
+      "equipo_id": "EQ-3007",
+      "horas": 800
+    },
+    {
+      "peh_id": "PEH-0032",
+      "plan_id": "PM-DRILL-STD",
+      "equipo_id": "EQ-3008",
+      "horas": 250
+    },
+    {
+      "peh_id": "PEH-0033",
+      "plan_id": "PM-DRILL-STD",
+      "equipo_id": "EQ-3008",
+      "horas": 500
+    },
+    {
+      "peh_id": "PEH-0034",
+      "plan_id": "PM-DRILL-STD",
+      "equipo_id": "EQ-3008",
+      "horas": 1000
+    },
+    {
+      "peh_id": "PEH-0035",
+      "plan_id": "PM-DOZER-STD",
+      "equipo_id": "EQ-3009",
+      "horas": 300
+    },
+    {
+      "peh_id": "PEH-0036",
+      "plan_id": "PM-DOZER-STD",
+      "equipo_id": "EQ-3009",
+      "horas": 600
+    },
+    {
+      "peh_id": "PEH-0037",
+      "plan_id": "PM-DRILL-STD",
+      "equipo_id": "EQ-3010",
+      "horas": 250
+    },
+    {
+      "peh_id": "PEH-0038",
+      "plan_id": "PM-DRILL-STD",
+      "equipo_id": "EQ-3010",
+      "horas": 500
+    },
+    {
+      "peh_id": "PEH-0039",
+      "plan_id": "PM-DRILL-STD",
+      "equipo_id": "EQ-3010",
+      "horas": 900
+    }
+  ],
+  "PLAN_EQUIPO_HITO_REPUESTO": [
+    {
+      "peh_id": "PEH-0001",
+      "repuesto_id": "RPT-001",
+      "cantidad": 3
+    },
+    {
+      "peh_id": "PEH-0001",
+      "repuesto_id": "RPT-007",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0002",
+      "repuesto_id": "RPT-008",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0003",
+      "repuesto_id": "RPT-003",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0003",
+      "repuesto_id": "RPT-001",
+      "cantidad": 3
+    },
+    {
+      "peh_id": "PEH-0004",
+      "repuesto_id": "RPT-007",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0005",
+      "repuesto_id": "RPT-001",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0005",
+      "repuesto_id": "RPT-008",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0006",
+      "repuesto_id": "RPT-001",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0007",
+      "repuesto_id": "RPT-002",
+      "cantidad": 3
+    },
+    {
+      "peh_id": "PEH-0008",
+      "repuesto_id": "RPT-008",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0009",
+      "repuesto_id": "RPT-001",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0009",
+      "repuesto_id": "RPT-002",
+      "cantidad": 4
+    },
+    {
+      "peh_id": "PEH-0010",
+      "repuesto_id": "RPT-008",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0010",
+      "repuesto_id": "RPT-001",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0011",
+      "repuesto_id": "RPT-007",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0012",
+      "repuesto_id": "RPT-003",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0013",
+      "repuesto_id": "RPT-004",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0014",
+      "repuesto_id": "RPT-007",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0014",
+      "repuesto_id": "RPT-003",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0015",
+      "repuesto_id": "RPT-004",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0015",
+      "repuesto_id": "RPT-001",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0016",
+      "repuesto_id": "RPT-008",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0017",
+      "repuesto_id": "RPT-003",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0018",
+      "repuesto_id": "RPT-001",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0019",
+      "repuesto_id": "RPT-003",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0019",
+      "repuesto_id": "RPT-001",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0020",
+      "repuesto_id": "RPT-006",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0021",
+      "repuesto_id": "RPT-005",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0022",
+      "repuesto_id": "RPT-001",
+      "cantidad": 3
+    },
+    {
+      "peh_id": "PEH-0023",
+      "repuesto_id": "RPT-005",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0024",
+      "repuesto_id": "RPT-001",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0024",
+      "repuesto_id": "RPT-007",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0025",
+      "repuesto_id": "RPT-005",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0025",
+      "repuesto_id": "RPT-001",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0026",
+      "repuesto_id": "RPT-011",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0026",
+      "repuesto_id": "RPT-009",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0027",
+      "repuesto_id": "RPT-011",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0027",
+      "repuesto_id": "RPT-013",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0028",
+      "repuesto_id": "RPT-009",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0029",
+      "repuesto_id": "RPT-008",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0030",
+      "repuesto_id": "RPT-003",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0031",
+      "repuesto_id": "RPT-001",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0032",
+      "repuesto_id": "RPT-010",
+      "cantidad": 3
+    },
+    {
+      "peh_id": "PEH-0033",
+      "repuesto_id": "RPT-012",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0034",
+      "repuesto_id": "RPT-010",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0001",
+      "repuesto_id": "RPT-008",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0001",
+      "repuesto_id": "RPT-003",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0002",
+      "repuesto_id": "RPT-001",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0002",
+      "repuesto_id": "RPT-007",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0002",
+      "repuesto_id": "RPT-003",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0003",
+      "repuesto_id": "RPT-007",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0003",
+      "repuesto_id": "RPT-008",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0004",
+      "repuesto_id": "RPT-001",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0004",
+      "repuesto_id": "RPT-008",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0004",
+      "repuesto_id": "RPT-003",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0005",
+      "repuesto_id": "RPT-007",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0005",
+      "repuesto_id": "RPT-003",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0006",
+      "repuesto_id": "RPT-002",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0006",
+      "repuesto_id": "RPT-003",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0007",
+      "repuesto_id": "RPT-001",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0007",
+      "repuesto_id": "RPT-003",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0008",
+      "repuesto_id": "RPT-001",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0008",
+      "repuesto_id": "RPT-002",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0008",
+      "repuesto_id": "RPT-003",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0009",
+      "repuesto_id": "RPT-003",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0010",
+      "repuesto_id": "RPT-002",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0010",
+      "repuesto_id": "RPT-003",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0011",
+      "repuesto_id": "RPT-003",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0011",
+      "repuesto_id": "RPT-004",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0012",
+      "repuesto_id": "RPT-007",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0012",
+      "repuesto_id": "RPT-004",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0013",
+      "repuesto_id": "RPT-007",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0013",
+      "repuesto_id": "RPT-003",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0014",
+      "repuesto_id": "RPT-004",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0015",
+      "repuesto_id": "RPT-007",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0015",
+      "repuesto_id": "RPT-003",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0016",
+      "repuesto_id": "RPT-003",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0016",
+      "repuesto_id": "RPT-001",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0017",
+      "repuesto_id": "RPT-008",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0017",
+      "repuesto_id": "RPT-001",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0018",
+      "repuesto_id": "RPT-008",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0018",
+      "repuesto_id": "RPT-003",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0019",
+      "repuesto_id": "RPT-008",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0020",
+      "repuesto_id": "RPT-008",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0020",
+      "repuesto_id": "RPT-003",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0020",
+      "repuesto_id": "RPT-001",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0021",
+      "repuesto_id": "RPT-001",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0021",
+      "repuesto_id": "RPT-007",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0022",
+      "repuesto_id": "RPT-005",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0022",
+      "repuesto_id": "RPT-007",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0023",
+      "repuesto_id": "RPT-001",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0023",
+      "repuesto_id": "RPT-007",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0024",
+      "repuesto_id": "RPT-005",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0025",
+      "repuesto_id": "RPT-007",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0001",
+      "repuesto_id": "RPT-106",
+      "cantidad": 4
+    },
+    {
+      "peh_id": "PEH-0002",
+      "repuesto_id": "RPT-091",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0002",
+      "repuesto_id": "RPT-108",
+      "cantidad": 4
+    },
+    {
+      "peh_id": "PEH-0003",
+      "repuesto_id": "RPT-073",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0003",
+      "repuesto_id": "RPT-024",
+      "cantidad": 3
+    },
+    {
+      "peh_id": "PEH-0004",
+      "repuesto_id": "RPT-094",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0004",
+      "repuesto_id": "RPT-057",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0005",
+      "repuesto_id": "RPT-080",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0006",
+      "repuesto_id": "RPT-077",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0006",
+      "repuesto_id": "RPT-073",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0007",
+      "repuesto_id": "RPT-044",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0007",
+      "repuesto_id": "RPT-120",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0008",
+      "repuesto_id": "RPT-055",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0009",
+      "repuesto_id": "RPT-095",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0010",
+      "repuesto_id": "RPT-039",
+      "cantidad": 3
+    },
+    {
+      "peh_id": "PEH-0011",
+      "repuesto_id": "RPT-039",
+      "cantidad": 4
+    },
+    {
+      "peh_id": "PEH-0011",
+      "repuesto_id": "RPT-018",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0012",
+      "repuesto_id": "RPT-041",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0013",
+      "repuesto_id": "RPT-036",
+      "cantidad": 3
+    },
+    {
+      "peh_id": "PEH-0013",
+      "repuesto_id": "RPT-050",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0014",
+      "repuesto_id": "RPT-054",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0014",
+      "repuesto_id": "RPT-071",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0015",
+      "repuesto_id": "RPT-101",
+      "cantidad": 3
+    },
+    {
+      "peh_id": "PEH-0016",
+      "repuesto_id": "RPT-018",
+      "cantidad": 3
+    },
+    {
+      "peh_id": "PEH-0017",
+      "repuesto_id": "RPT-128",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0018",
+      "repuesto_id": "RPT-060",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0019",
+      "repuesto_id": "RPT-024",
+      "cantidad": 3
+    },
+    {
+      "peh_id": "PEH-0019",
+      "repuesto_id": "RPT-113",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0020",
+      "repuesto_id": "RPT-048",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0021",
+      "repuesto_id": "RPT-035",
+      "cantidad": 4
+    },
+    {
+      "peh_id": "PEH-0022",
+      "repuesto_id": "RPT-047",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0022",
+      "repuesto_id": "RPT-072",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0023",
+      "repuesto_id": "RPT-133",
+      "cantidad": 3
+    },
+    {
+      "peh_id": "PEH-0024",
+      "repuesto_id": "RPT-034",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0025",
+      "repuesto_id": "RPT-065",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0025",
+      "repuesto_id": "RPT-092",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0026",
+      "repuesto_id": "RPT-098",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0026",
+      "repuesto_id": "RPT-086",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0026",
+      "repuesto_id": "RPT-033",
+      "cantidad": 3
+    },
+    {
+      "peh_id": "PEH-0027",
+      "repuesto_id": "RPT-020",
+      "cantidad": 3
+    },
+    {
+      "peh_id": "PEH-0027",
+      "repuesto_id": "RPT-103",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0027",
+      "repuesto_id": "RPT-055",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0028",
+      "repuesto_id": "RPT-054",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0028",
+      "repuesto_id": "RPT-124",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0029",
+      "repuesto_id": "RPT-067",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0029",
+      "repuesto_id": "RPT-072",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0029",
+      "repuesto_id": "RPT-092",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0029",
+      "repuesto_id": "RPT-090",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0030",
+      "repuesto_id": "RPT-099",
+      "cantidad": 4
+    },
+    {
+      "peh_id": "PEH-0030",
+      "repuesto_id": "RPT-057",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0030",
+      "repuesto_id": "RPT-135",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0030",
+      "repuesto_id": "RPT-064",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0031",
+      "repuesto_id": "RPT-129",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0031",
+      "repuesto_id": "RPT-059",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0032",
+      "repuesto_id": "RPT-066",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0032",
+      "repuesto_id": "RPT-076",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0033",
+      "repuesto_id": "RPT-089",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0033",
+      "repuesto_id": "RPT-108",
+      "cantidad": 3
+    },
+    {
+      "peh_id": "PEH-0033",
+      "repuesto_id": "RPT-067",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0034",
+      "repuesto_id": "RPT-117",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0034",
+      "repuesto_id": "RPT-037",
+      "cantidad": 4
+    },
+    {
+      "peh_id": "PEH-0035",
+      "repuesto_id": "RPT-136",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0035",
+      "repuesto_id": "RPT-137",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0036",
+      "repuesto_id": "RPT-136",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0036",
+      "repuesto_id": "RPT-138",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0037",
+      "repuesto_id": "RPT-139",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0038",
+      "repuesto_id": "RPT-139",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0038",
+      "repuesto_id": "RPT-140",
+      "cantidad": 2
+    },
+    {
+      "peh_id": "PEH-0039",
+      "repuesto_id": "RPT-140",
+      "cantidad": 1
+    },
+    {
+      "peh_id": "PEH-0039",
+      "repuesto_id": "RPT-137",
+      "cantidad": 1
+    }
+  ],
+  "HISTORIAL_MANTENIMIENTO_LOG": [
+    {
+      "hist_id": "H-0001",
+      "fecha": "2025-07-25",
+      "cliente_id": "CL-VENTURA01",
+      "peh_id": "PEH-0002",
+      "actividad": "Cambio aceite y filtro",
+      "horometro": 380,
+      "horas_ultima_mantencion": 400
+    },
+    {
+      "hist_id": "H-0002",
+      "fecha": "2025-04-07",
+      "cliente_id": "CL-VENTURA01",
+      "peh_id": "PEH-0002",
+      "actividad": "Inspección general",
+      "horometro": 470,
+      "horas_ultima_mantencion": 400
+    },
+    {
+      "hist_id": "H-0003",
+      "fecha": "2025-04-15",
+      "cliente_id": "CL-VENTURA01",
+      "peh_id": "PEH-0002",
+      "actividad": "Revisión correa y sensores",
+      "horometro": 520,
+      "horas_ultima_mantencion": 400
+    },
+    {
+      "hist_id": "H-0004",
+      "fecha": "2025-06-16",
+      "cliente_id": "CL-VENTURA02",
+      "peh_id": "PEH-0007",
+      "actividad": "Servicio hidráulico parcial",
+      "horometro": 390,
+      "horas_ultima_mantencion": 400
+    },
+    {
+      "hist_id": "H-0005",
+      "fecha": "2025-07-13",
+      "cliente_id": "CL-VENTURA02",
+      "peh_id": "PEH-0007",
+      "actividad": "Reemplazo frenos",
+      "horometro": 460,
+      "horas_ultima_mantencion": 400
+    },
+    {
+      "hist_id": "H-0006",
+      "fecha": "2025-04-29",
+      "cliente_id": "CL-VENTURA02",
+      "peh_id": "PEH-0007",
+      "actividad": "Chequeo transmisión",
+      "horometro": 510,
+      "horas_ultima_mantencion": 400
+    },
+    {
+      "hist_id": "H-0007",
+      "fecha": "2025-06-29",
+      "cliente_id": "CL-VENTURA02",
+      "peh_id": "PEH-0012",
+      "actividad": "Cambio filtro aire",
+      "horometro": 360,
+      "horas_ultima_mantencion": 400
+    },
+    {
+      "hist_id": "H-0008",
+      "fecha": "2025-05-28",
+      "cliente_id": "CL-VENTURA02",
+      "peh_id": "PEH-0012",
+      "actividad": "Revisión sensores",
+      "horometro": 410,
+      "horas_ultima_mantencion": 400
+    },
+    {
+      "hist_id": "H-0009",
+      "fecha": "2025-07-25",
+      "cliente_id": "CL-VENTURA02",
+      "peh_id": "PEH-0012",
+      "actividad": "Chequeo general",
+      "horometro": 430,
+      "horas_ultima_mantencion": 400
+    },
+    {
+      "hist_id": "H-0010",
+      "fecha": "2025-08-17",
+      "cliente_id": "CL-VENTURA01",
+      "peh_id": "PEH-0016",
+      "actividad": "Tensionado de correa",
+      "horometro": 190,
+      "horas_ultima_mantencion": 200
+    },
+    {
+      "hist_id": "H-0011",
+      "fecha": "2025-07-10",
+      "cliente_id": "CL-VENTURA01",
+      "peh_id": "PEH-0016",
+      "actividad": "Revisión sensores",
+      "horometro": 225,
+      "horas_ultima_mantencion": 200
+    },
+    {
+      "hist_id": "H-0012",
+      "fecha": "2025-09-17",
+      "cliente_id": "CL-VENTURA01",
+      "peh_id": "PEH-0016",
+      "actividad": "Inspección general",
+      "horometro": 235,
+      "horas_ultima_mantencion": 200
+    },
+    {
+      "hist_id": "H-0013",
+      "fecha": "2025-08-14",
+      "cliente_id": "CL-VENTURA04",
+      "peh_id": "PEH-0023",
+      "actividad": "Cambio sellos hidráulicos",
+      "horometro": 690,
+      "horas_ultima_mantencion": 800
+    },
+    {
+      "hist_id": "H-0014",
+      "fecha": "2025-07-19",
+      "cliente_id": "CL-VENTURA04",
+      "peh_id": "PEH-0023",
+      "actividad": "Cambio filtro aceite",
+      "horometro": 735,
+      "horas_ultima_mantencion": 800
+    },
+    {
+      "hist_id": "H-0015",
+      "fecha": "2025-04-30",
+      "cliente_id": "CL-VENTURA04",
+      "peh_id": "PEH-0023",
+      "actividad": "Lubricación general",
+      "horometro": 760,
+      "horas_ultima_mantencion": 800
+    },
+    {
+      "hist_id": "H-0016",
+      "fecha": "2025-08-18",
+      "cliente_id": "CL-VENTURA04",
+      "peh_id": "PEH-0028",
+      "actividad": "Calibración de sensores",
+      "horometro": 901,
+      "horas_ultima_mantencion": 1000
+    },
+    {
+      "hist_id": "H-0017",
+      "fecha": "2025-09-05",
+      "cliente_id": "CL-VENTURA01",
+      "peh_id": "PEH-0007",
+      "actividad": "Revisión de dirección",
+      "horometro": 1482,
+      "horas_ultima_mantencion": 400
+    },
+    {
+      "hist_id": "H-0018",
+      "fecha": "2025-06-11",
+      "cliente_id": "CL-VENTURA06",
+      "peh_id": "PEH-0004",
+      "actividad": "Revisión de transmisión",
+      "horometro": 907,
+      "horas_ultima_mantencion": 1000
+    },
+    {
+      "hist_id": "H-0019",
+      "fecha": "2025-04-16",
+      "cliente_id": "CL-VENTURA03",
+      "peh_id": "PEH-0027",
+      "actividad": "Mantenimiento de motor",
+      "horometro": 1047,
+      "horas_ultima_mantencion": 500
+    },
+    {
+      "hist_id": "H-0020",
+      "fecha": "2025-09-14",
+      "cliente_id": "CL-VENTURA04",
+      "peh_id": "PEH-0007",
+      "actividad": "Calibración de sensores",
+      "horometro": 510,
+      "horas_ultima_mantencion": 400
+    },
+    {
+      "hist_id": "H-0021",
+      "fecha": "2025-06-07",
+      "cliente_id": "CL-VENTURA05",
+      "peh_id": "PEH-0025",
+      "actividad": "Reemplazo de repuestos desgastados",
+      "horometro": 368,
+      "horas_ultima_mantencion": 1200
+    },
+    {
+      "hist_id": "H-0022",
+      "fecha": "2025-06-28",
+      "cliente_id": "CL-VENTURA02",
+      "peh_id": "PEH-0034",
+      "actividad": "Inspección de sistemas hidráulicos",
+      "horometro": 1116,
+      "horas_ultima_mantencion": 1000
+    },
+    {
+      "hist_id": "H-0023",
+      "fecha": "2025-05-02",
+      "cliente_id": "CL-VENTURA03",
+      "peh_id": "PEH-0015",
+      "actividad": "Inspección de sistemas hidráulicos",
+      "horometro": 973,
+      "horas_ultima_mantencion": 1200
+    },
+    {
+      "hist_id": "H-0024",
+      "fecha": "2025-06-02",
+      "cliente_id": "CL-VENTURA04",
+      "peh_id": "PEH-0001",
+      "actividad": "Calibración de sensores",
+      "horometro": 1337,
+      "horas_ultima_mantencion": 200
+    },
+    {
+      "hist_id": "H-0025",
+      "fecha": "2025-09-07",
+      "cliente_id": "CL-VENTURA05",
+      "peh_id": "PEH-0030",
+      "actividad": "Reemplazo de repuestos desgastados",
+      "horometro": 536,
+      "horas_ultima_mantencion": 400
+    },
+    {
+      "hist_id": "H-0026",
+      "fecha": "2025-07-01",
+      "cliente_id": "CL-VENTURA06",
+      "peh_id": "PEH-0034",
+      "actividad": "Mantenimiento de frenos",
+      "horometro": 1414,
+      "horas_ultima_mantencion": 1000
+    },
+    {
+      "hist_id": "H-0027",
+      "fecha": "2025-07-04",
+      "cliente_id": "CL-VENTURA02",
+      "peh_id": "PEH-0030",
+      "actividad": "Mantenimiento de motor",
+      "horometro": 1249,
+      "horas_ultima_mantencion": 400
+    },
+    {
+      "hist_id": "H-0028",
+      "fecha": "2025-09-23",
+      "cliente_id": "CL-VENTURA06",
+      "peh_id": "PEH-0023",
+      "actividad": "Revisión general del equipo",
+      "horometro": 1287,
+      "horas_ultima_mantencion": 800
+    },
+    {
+      "hist_id": "H-0029",
+      "fecha": "2025-08-02",
+      "cliente_id": "CL-VENTURA01",
+      "peh_id": "PEH-0020",
+      "actividad": "Revisión de neumáticos",
+      "horometro": 691,
+      "horas_ultima_mantencion": 1200
+    },
+    {
+      "hist_id": "H-0030",
+      "fecha": "2025-08-30",
+      "cliente_id": "CL-VENTURA04",
+      "peh_id": "PEH-0029",
+      "actividad": "Chequeo de sistemas de enfriamiento",
+      "horometro": 765,
+      "horas_ultima_mantencion": 200
+    },
+    {
+      "hist_id": "H-0031",
+      "fecha": "2025-04-30",
+      "cliente_id": "CL-VENTURA04",
+      "peh_id": "PEH-0021",
+      "actividad": "Revisión de transmisión",
+      "horometro": 762,
+      "horas_ultima_mantencion": 200
+    },
+    {
+      "hist_id": "H-0032",
+      "fecha": "2025-06-28",
+      "cliente_id": "CL-VENTURA02",
+      "peh_id": "PEH-0003",
+      "actividad": "Mantenimiento de motor",
+      "horometro": 1382,
+      "horas_ultima_mantencion": 800
+    },
+    {
+      "hist_id": "H-0033",
+      "fecha": "2025-07-21",
+      "cliente_id": "CL-VENTURA02",
+      "peh_id": "PEH-0015",
+      "actividad": "Cambio de filtros y lubricantes",
+      "horometro": 1133,
+      "horas_ultima_mantencion": 1200
+    },
+    {
+      "hist_id": "H-0034",
+      "fecha": "2025-05-04",
+      "cliente_id": "CL-VENTURA03",
+      "peh_id": "PEH-0025",
+      "actividad": "Revisión de neumáticos",
+      "horometro": 704,
+      "horas_ultima_mantencion": 1200
+    },
+    {
+      "hist_id": "H-0035",
+      "fecha": "2025-09-18",
+      "cliente_id": "CL-VENTURA04",
+      "peh_id": "PEH-0018",
+      "actividad": "Mantenimiento de motor",
+      "horometro": 493,
+      "horas_ultima_mantencion": 800
+    },
+    {
+      "hist_id": "H-0036",
+      "fecha": "2025-05-07",
+      "cliente_id": "CL-VENTURA01",
+      "peh_id": "PEH-0021",
+      "actividad": "Chequeo de sistemas de enfriamiento",
+      "horometro": 1063,
+      "horas_ultima_mantencion": 200
+    },
+    {
+      "hist_id": "H-0037",
+      "fecha": "2025-08-07",
+      "cliente_id": "CL-VENTURA01",
+      "peh_id": "PEH-0018",
+      "actividad": "Inspección de sistemas hidráulicos",
+      "horometro": 175,
+      "horas_ultima_mantencion": 800
+    }
+  ],
+  "HISTORIAL_MANTENIMIENTO_REPUESTO": [
+    {
+      "hist_id": "H-0001",
+      "repuesto_id": "RPT-001",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0001",
+      "repuesto_id": "RPT-007",
+      "cantidad": 2
+    },
+    {
+      "hist_id": "H-0003",
+      "repuesto_id": "RPT-008",
+      "cantidad": 3
+    },
+    {
+      "hist_id": "H-0003",
+      "repuesto_id": "RPT-003",
+      "cantidad": 3
+    },
+    {
+      "hist_id": "H-0004",
+      "repuesto_id": "RPT-001",
+      "cantidad": 3
+    },
+    {
+      "hist_id": "H-0004",
+      "repuesto_id": "RPT-002",
+      "cantidad": 2
+    },
+    {
+      "hist_id": "H-0005",
+      "repuesto_id": "RPT-002",
+      "cantidad": 2
+    },
+    {
+      "hist_id": "H-0006",
+      "repuesto_id": "RPT-003",
+      "cantidad": 4
+    },
+    {
+      "hist_id": "H-0007",
+      "repuesto_id": "RPT-007",
+      "cantidad": 3
+    },
+    {
+      "hist_id": "H-0008",
+      "repuesto_id": "RPT-003",
+      "cantidad": 2
+    },
+    {
+      "hist_id": "H-0008",
+      "repuesto_id": "RPT-004",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0010",
+      "repuesto_id": "RPT-008",
+      "cantidad": 4
+    },
+    {
+      "hist_id": "H-0011",
+      "repuesto_id": "RPT-003",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0012",
+      "repuesto_id": "RPT-003",
+      "cantidad": 2
+    },
+    {
+      "hist_id": "H-0012",
+      "repuesto_id": "RPT-001",
+      "cantidad": 2
+    },
+    {
+      "hist_id": "H-0013",
+      "repuesto_id": "RPT-005",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0014",
+      "repuesto_id": "RPT-001",
+      "cantidad": 3
+    },
+    {
+      "hist_id": "H-0014",
+      "repuesto_id": "RPT-007",
+      "cantidad": 2
+    },
+    {
+      "hist_id": "H-0015",
+      "repuesto_id": "RPT-001",
+      "cantidad": 2
+    },
+    {
+      "hist_id": "H-0016",
+      "repuesto_id": "RPT-080",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0016",
+      "repuesto_id": "RPT-035",
+      "cantidad": 4
+    },
+    {
+      "hist_id": "H-0016",
+      "repuesto_id": "RPT-055",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0016",
+      "repuesto_id": "RPT-035",
+      "cantidad": 4
+    },
+    {
+      "hist_id": "H-0017",
+      "repuesto_id": "RPT-104",
+      "cantidad": 4
+    },
+    {
+      "hist_id": "H-0017",
+      "repuesto_id": "RPT-109",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0017",
+      "repuesto_id": "RPT-076",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0017",
+      "repuesto_id": "RPT-095",
+      "cantidad": 3
+    },
+    {
+      "hist_id": "H-0017",
+      "repuesto_id": "RPT-100",
+      "cantidad": 4
+    },
+    {
+      "hist_id": "H-0018",
+      "repuesto_id": "RPT-110",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0018",
+      "repuesto_id": "RPT-115",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0019",
+      "repuesto_id": "RPT-051",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0019",
+      "repuesto_id": "RPT-123",
+      "cantidad": 3
+    },
+    {
+      "hist_id": "H-0019",
+      "repuesto_id": "RPT-066",
+      "cantidad": 2
+    },
+    {
+      "hist_id": "H-0020",
+      "repuesto_id": "RPT-103",
+      "cantidad": 2
+    },
+    {
+      "hist_id": "H-0020",
+      "repuesto_id": "RPT-037",
+      "cantidad": 4
+    },
+    {
+      "hist_id": "H-0020",
+      "repuesto_id": "RPT-035",
+      "cantidad": 4
+    },
+    {
+      "hist_id": "H-0021",
+      "repuesto_id": "RPT-031",
+      "cantidad": 3
+    },
+    {
+      "hist_id": "H-0021",
+      "repuesto_id": "RPT-027",
+      "cantidad": 3
+    },
+    {
+      "hist_id": "H-0021",
+      "repuesto_id": "RPT-080",
+      "cantidad": 3
+    },
+    {
+      "hist_id": "H-0021",
+      "repuesto_id": "RPT-033",
+      "cantidad": 2
+    },
+    {
+      "hist_id": "H-0021",
+      "repuesto_id": "RPT-111",
+      "cantidad": 2
+    },
+    {
+      "hist_id": "H-0022",
+      "repuesto_id": "RPT-084",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0022",
+      "repuesto_id": "RPT-023",
+      "cantidad": 2
+    },
+    {
+      "hist_id": "H-0022",
+      "repuesto_id": "RPT-040",
+      "cantidad": 3
+    },
+    {
+      "hist_id": "H-0022",
+      "repuesto_id": "RPT-016",
+      "cantidad": 3
+    },
+    {
+      "hist_id": "H-0023",
+      "repuesto_id": "RPT-078",
+      "cantidad": 2
+    },
+    {
+      "hist_id": "H-0023",
+      "repuesto_id": "RPT-021",
+      "cantidad": 2
+    },
+    {
+      "hist_id": "H-0023",
+      "repuesto_id": "RPT-117",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0024",
+      "repuesto_id": "RPT-097",
+      "cantidad": 3
+    },
+    {
+      "hist_id": "H-0024",
+      "repuesto_id": "RPT-087",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0024",
+      "repuesto_id": "RPT-009",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0024",
+      "repuesto_id": "RPT-036",
+      "cantidad": 4
+    },
+    {
+      "hist_id": "H-0025",
+      "repuesto_id": "RPT-123",
+      "cantidad": 3
+    },
+    {
+      "hist_id": "H-0025",
+      "repuesto_id": "RPT-038",
+      "cantidad": 2
+    },
+    {
+      "hist_id": "H-0026",
+      "repuesto_id": "RPT-129",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0026",
+      "repuesto_id": "RPT-106",
+      "cantidad": 2
+    },
+    {
+      "hist_id": "H-0026",
+      "repuesto_id": "RPT-020",
+      "cantidad": 3
+    },
+    {
+      "hist_id": "H-0026",
+      "repuesto_id": "RPT-064",
+      "cantidad": 2
+    },
+    {
+      "hist_id": "H-0026",
+      "repuesto_id": "RPT-082",
+      "cantidad": 3
+    },
+    {
+      "hist_id": "H-0027",
+      "repuesto_id": "RPT-068",
+      "cantidad": 3
+    },
+    {
+      "hist_id": "H-0027",
+      "repuesto_id": "RPT-018",
+      "cantidad": 3
+    },
+    {
+      "hist_id": "H-0027",
+      "repuesto_id": "RPT-026",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0027",
+      "repuesto_id": "RPT-020",
+      "cantidad": 3
+    },
+    {
+      "hist_id": "H-0028",
+      "repuesto_id": "RPT-071",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0028",
+      "repuesto_id": "RPT-044",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0029",
+      "repuesto_id": "RPT-011",
+      "cantidad": 2
+    },
+    {
+      "hist_id": "H-0029",
+      "repuesto_id": "RPT-096",
+      "cantidad": 4
+    },
+    {
+      "hist_id": "H-0029",
+      "repuesto_id": "RPT-030",
+      "cantidad": 2
+    },
+    {
+      "hist_id": "H-0030",
+      "repuesto_id": "RPT-133",
+      "cantidad": 3
+    },
+    {
+      "hist_id": "H-0030",
+      "repuesto_id": "RPT-089",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0030",
+      "repuesto_id": "RPT-045",
+      "cantidad": 2
+    },
+    {
+      "hist_id": "H-0031",
+      "repuesto_id": "RPT-020",
+      "cantidad": 3
+    },
+    {
+      "hist_id": "H-0031",
+      "repuesto_id": "RPT-060",
+      "cantidad": 2
+    },
+    {
+      "hist_id": "H-0032",
+      "repuesto_id": "RPT-117",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0032",
+      "repuesto_id": "RPT-042",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0032",
+      "repuesto_id": "RPT-077",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0032",
+      "repuesto_id": "RPT-035",
+      "cantidad": 4
+    },
+    {
+      "hist_id": "H-0033",
+      "repuesto_id": "RPT-016",
+      "cantidad": 2
+    },
+    {
+      "hist_id": "H-0033",
+      "repuesto_id": "RPT-009",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0033",
+      "repuesto_id": "RPT-034",
+      "cantidad": 3
+    },
+    {
+      "hist_id": "H-0033",
+      "repuesto_id": "RPT-028",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0034",
+      "repuesto_id": "RPT-092",
+      "cantidad": 3
+    },
+    {
+      "hist_id": "H-0034",
+      "repuesto_id": "RPT-056",
+      "cantidad": 4
+    },
+    {
+      "hist_id": "H-0035",
+      "repuesto_id": "RPT-062",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0035",
+      "repuesto_id": "RPT-116",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0036",
+      "repuesto_id": "RPT-014",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0036",
+      "repuesto_id": "RPT-046",
+      "cantidad": 2
+    },
+    {
+      "hist_id": "H-0036",
+      "repuesto_id": "RPT-030",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0037",
+      "repuesto_id": "RPT-043",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0037",
+      "repuesto_id": "RPT-012",
+      "cantidad": 1
+    },
+    {
+      "hist_id": "H-0037",
+      "repuesto_id": "RPT-058",
+      "cantidad": 2
+    },
+    {
+      "hist_id": "H-0037",
+      "repuesto_id": "RPT-074",
+      "cantidad": 2
+    }
+  ],
+  "CALENDARIO_REPUESTOS_PLAN": [
+    {
+      "cal_id": "CAL-0001",
+      "cliente_id": "CL-VENTURA01",
+      "peh_id": "PEH-0003",
+      "actividad": "Servicio excavadora y lubricación",
+      "dias_restantes_est": 9,
+      "due_date_est": "2026-01-10"
+    },
+    {
+      "cal_id": "CAL-0002",
+      "cliente_id": "CL-VENTURA02",
+      "peh_id": "PEH-0008",
+      "actividad": "Servicio camión minero (hidráulico/frenos)",
+      "dias_restantes_est": 19,
+      "due_date_est": "2026-01-20"
+    },
+    {
+      "cal_id": "CAL-0003",
+      "cliente_id": "CL-VENTURA02",
+      "peh_id": "PEH-0013",
+      "actividad": "Servicio camión minero (hidráulico/frenos)",
+      "dias_restantes_est": 29,
+      "due_date_est": "2026-01-30"
+    },
+    {
+      "cal_id": "CAL-0004",
+      "cliente_id": "CL-VENTURA01",
+      "peh_id": "PEH-0017",
+      "actividad": "Servicio cargador frontal (correas/sensores)",
+      "dias_restantes_est": 39,
+      "due_date_est": "2026-02-09"
+    },
+    {
+      "cal_id": "CAL-0005",
+      "cliente_id": "CL-VENTURA04",
+      "peh_id": "PEH-0023",
+      "actividad": "Servicio excavadora y lubricación",
+      "dias_restantes_est": 49,
+      "due_date_est": "2026-02-19"
+    },
+    {
+      "cal_id": "CAL-0006",
+      "cliente_id": "CL-VENTURA02",
+      "peh_id": "PEH-0030",
+      "actividad": "Servicio cargador frontal (correas/sensores)",
+      "dias_restantes_est": 59,
+      "due_date_est": "2026-03-01"
+    },
+    {
+      "cal_id": "CAL-0007",
+      "cliente_id": "CL-VENTURA01",
+      "peh_id": "PEH-0032",
+      "actividad": "Servicio perforadora (martillo/circulación)",
+      "dias_restantes_est": 69,
+      "due_date_est": "2026-03-11"
+    },
+    {
+      "cal_id": "CAL-0008",
+      "cliente_id": "CL-VENTURA04",
+      "peh_id": "PEH-0017",
+      "actividad": "Servicio cargador frontal (correas/sensores)",
+      "dias_restantes_est": 79,
+      "due_date_est": "2026-03-21"
+    },
+    {
+      "cal_id": "CAL-0009",
+      "cliente_id": "CL-VENTURA04",
+      "peh_id": "PEH-0009",
+      "actividad": "Servicio camión minero (hidráulico/frenos)",
+      "dias_restantes_est": 89,
+      "due_date_est": "2026-03-31"
+    },
+    {
+      "cal_id": "CAL-0010",
+      "cliente_id": "CL-VENTURA01",
+      "peh_id": "PEH-0024",
+      "actividad": "Servicio excavadora y lubricación",
+      "dias_restantes_est": 99,
+      "due_date_est": "2026-04-10"
+    },
+    {
+      "cal_id": "CAL-0011",
+      "cliente_id": "CL-VENTURA06",
+      "peh_id": "PEH-0022",
+      "actividad": "Servicio excavadora y lubricación",
+      "dias_restantes_est": 109,
+      "due_date_est": "2026-04-20"
+    },
+    {
+      "cal_id": "CAL-0012",
+      "cliente_id": "CL-VENTURA03",
+      "peh_id": "PEH-0004",
+      "actividad": "Servicio excavadora y lubricación",
+      "dias_restantes_est": 119,
+      "due_date_est": "2026-04-30"
+    },
+    {
+      "cal_id": "CAL-0013",
+      "cliente_id": "CL-VENTURA03",
+      "peh_id": "PEH-0014",
+      "actividad": "Servicio camión minero (hidráulico/frenos)",
+      "dias_restantes_est": 129,
+      "due_date_est": "2026-05-10"
+    },
+    {
+      "cal_id": "CAL-0014",
+      "cliente_id": "CL-VENTURA01",
+      "peh_id": "PEH-0034",
+      "actividad": "Servicio perforadora (martillo/circulación)",
+      "dias_restantes_est": 139,
+      "due_date_est": "2026-05-20"
+    },
+    {
+      "cal_id": "CAL-0015",
+      "cliente_id": "CL-VENTURA04",
+      "peh_id": "PEH-0012",
+      "actividad": "Servicio camión minero (hidráulico/frenos)",
+      "dias_restantes_est": 149,
+      "due_date_est": "2026-05-30"
+    },
+    {
+      "cal_id": "CAL-0016",
+      "cliente_id": "CL-VENTURA06",
+      "peh_id": "PEH-0023",
+      "actividad": "Servicio excavadora y lubricación",
+      "dias_restantes_est": 159,
+      "due_date_est": "2026-06-09"
+    },
+    {
+      "cal_id": "CAL-0017",
+      "cliente_id": "CL-VENTURA03",
+      "peh_id": "PEH-0015",
+      "actividad": "Servicio camión minero (hidráulico/frenos)",
+      "dias_restantes_est": 169,
+      "due_date_est": "2026-06-19"
+    },
+    {
+      "cal_id": "CAL-0018",
+      "cliente_id": "CL-VENTURA01",
+      "peh_id": "PEH-0019",
+      "actividad": "Servicio cargador frontal (correas/sensores)",
+      "dias_restantes_est": 179,
+      "due_date_est": "2026-06-29"
+    },
+    {
+      "cal_id": "CAL-0019",
+      "cliente_id": "CL-VENTURA03",
+      "peh_id": "PEH-0018",
+      "actividad": "Servicio cargador frontal (correas/sensores)",
+      "dias_restantes_est": 189,
+      "due_date_est": "2026-07-09"
+    },
+    {
+      "cal_id": "CAL-0020",
+      "cliente_id": "CL-VENTURA05",
+      "peh_id": "PEH-0032",
+      "actividad": "Servicio perforadora (martillo/circulación)",
+      "dias_restantes_est": 199,
+      "due_date_est": "2026-07-19"
+    },
+    {
+      "cal_id": "CAL-0021",
+      "cliente_id": "CL-VENTURA01",
+      "peh_id": "PEH-0019",
+      "actividad": "Servicio cargador frontal (correas/sensores)",
+      "dias_restantes_est": 209,
+      "due_date_est": "2026-07-29"
+    },
+    {
+      "cal_id": "CAL-0022",
+      "cliente_id": "CL-VENTURA03",
+      "peh_id": "PEH-0026",
+      "actividad": "Servicio tractor oruga (rodaje/enfriamiento)",
+      "dias_restantes_est": 54,
+      "due_date_est": "2026-02-24"
+    },
+    {
+      "cal_id": "CAL-0023",
+      "cliente_id": "CL-VENTURA03",
+      "peh_id": "PEH-0027",
+      "actividad": "Servicio tractor oruga (rodaje/enfriamiento)",
+      "dias_restantes_est": 63,
+      "due_date_est": "2026-03-05"
+    },
+    {
+      "cal_id": "CAL-0024",
+      "cliente_id": "CL-VENTURA03",
+      "peh_id": "PEH-0028",
+      "actividad": "Servicio tractor oruga (rodaje/enfriamiento)",
+      "dias_restantes_est": 68,
+      "due_date_est": "2026-03-10"
+    },
+    {
+      "cal_id": "CAL-0025",
+      "cliente_id": "CL-VENTURA07",
+      "peh_id": "PEH-0035",
+      "actividad": "Servicio tractor oruga (rodaje/enfriamiento)",
+      "dias_restantes_est": 58,
+      "due_date_est": "2026-02-28"
+    },
+    {
+      "cal_id": "CAL-0026",
+      "cliente_id": "CL-VENTURA07",
+      "peh_id": "PEH-0036",
+      "actividad": "Servicio tractor oruga (rodaje/enfriamiento)",
+      "dias_restantes_est": 60,
+      "due_date_est": "2026-03-02"
+    },
+    {
+      "cal_id": "CAL-0027",
+      "cliente_id": "CL-VENTURA08",
+      "peh_id": "PEH-0037",
+      "actividad": "Servicio perforadora (martillo/circulación)",
+      "dias_restantes_est": 70,
+      "due_date_est": "2026-03-12"
+    },
+    {
+      "cal_id": "CAL-0028",
+      "cliente_id": "CL-VENTURA08",
+      "peh_id": "PEH-0038",
+      "actividad": "Servicio perforadora (martillo/circulación)",
+      "dias_restantes_est": 80,
+      "due_date_est": "2026-03-22"
+    },
+    {
+      "cal_id": "CAL-0029",
+      "cliente_id": "CL-VENTURA08",
+      "peh_id": "PEH-0039",
+      "actividad": "Servicio perforadora (martillo/circulación)",
+      "dias_restantes_est": 88,
+      "due_date_est": "2026-03-30"
+    }
+  ]
+}

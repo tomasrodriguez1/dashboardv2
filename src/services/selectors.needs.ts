@@ -26,6 +26,7 @@ export interface NeedsFiltros {
   equipo: string | 'Todos';
   repuesto: string | 'Todos';
   horizonte: '30d' | '90d' | '180d';
+  estadoMantencion: 'Todos' | 'pendiente' | 'completada' | 'atrasada';
 }
 
 export interface NeedsKPIs {
@@ -93,7 +94,17 @@ function aplicarFiltros(
   if (filtros.repuesto && filtros.repuesto !== 'Todos') {
     resultado = resultado.filter(m => m.repuesto_nombre === filtros.repuesto);
   }
-  
+
+  // Filtrar por estado de mantención
+  if (filtros.estadoMantencion && filtros.estadoMantencion !== 'Todos') {
+    const hoy = new Date().toISOString().split('T')[0];
+    if (filtros.estadoMantencion === 'atrasada') {
+      resultado = resultado.filter(m => m.estado === 'pendiente' && m.fecha_estimada < hoy);
+    } else {
+      resultado = resultado.filter(m => m.estado === filtros.estadoMantencion);
+    }
+  }
+
   return resultado;
 }
 

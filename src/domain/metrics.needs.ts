@@ -11,7 +11,7 @@ import type { MantencionRow } from './types';
 // Tipos para necesidades
 // ===========================
 
-export type AlertLevel = 'OK' | 'AMARILLO' | 'ROJO';
+export type AlertLevel = 'OK' | 'AMARILLO' | 'ROJO' | 'COMPLETADA';
 
 export interface ClienteNeedsGroup {
   cliente_id: string;
@@ -32,6 +32,7 @@ export interface MantencionNeedsGroup {
   fecha_estimada: string;
   tipo: string;
   total_repuestos: number;
+  estado: 'pendiente' | 'completada';
   repuestos: MantencionRow[];
 }
 
@@ -192,12 +193,13 @@ function groupNeedsByMantencion(items: MantencionRow[]): MantencionNeedsGroup[] 
       fecha_estimada: repuestos[0].fecha_estimada,
       tipo: repuestos[0].tipo,
       total_repuestos,
+      estado: repuestos[0].estado ?? 'pendiente',
       repuestos: repuestos.sort((a, b) => a.repuesto_nombre.localeCompare(b.repuesto_nombre)),
     });
   });
   
-  // Ordenar por fecha estimada ascendente
-  return result.sort((a, b) => a.fecha_estimada.localeCompare(b.fecha_estimada));
+  // Ordenar por horas de mantención ascendente (progresión natural del plan)
+  return result.sort((a, b) => a.mantencion_horas - b.mantencion_horas);
 }
 
 // ===========================

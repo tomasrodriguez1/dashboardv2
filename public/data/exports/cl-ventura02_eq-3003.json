@@ -1,0 +1,268 @@
+{
+  "cliente": {
+    "cliente_id": "CL-VENTURA02",
+    "nombre": "Minera Patagónica"
+  },
+  "equipo": {
+    "equipo_id": "EQ-3003",
+    "modelo": "Sandvik TH540",
+    "fabricante": "Sandvik",
+    "serie": "SANDTH540-2021-378",
+    "tasa_uso_horas_dia": 8,
+    "critico": true
+  },
+  "mantenciones": [
+    {
+      "peh_id": "PEH-0011",
+      "plan_id": "PM-TRUCK-STD",
+      "horas": 200,
+      "plan_familia": "Camiones Mineros",
+      "plan_actividad": "Servicio camión minero (hidráulico/frenos)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-007",
+          "cantidad": 2,
+          "descripcion": "Filtro de aire estándar",
+          "proveedor": "AireClean Ltda.",
+          "stock_u": 25,
+          "lead_time_dias": 6
+        },
+        {
+          "repuesto_id": "RPT-003",
+          "cantidad": 1,
+          "descripcion": "Sensor de temperatura Volvo L120H",
+          "proveedor": "ElectroRepuestos Chile",
+          "stock_u": 22,
+          "lead_time_dias": 5
+        },
+        {
+          "repuesto_id": "RPT-004",
+          "cantidad": 1,
+          "descripcion": "Bomba de combustible Sandvik DP1500i",
+          "proveedor": "Repuestos Sandvik Ltda.",
+          "stock_u": 3,
+          "lead_time_dias": 21
+        },
+        {
+          "repuesto_id": "RPT-039",
+          "cantidad": 4,
+          "descripcion": "Kit de reparación de frenos",
+          "proveedor": "LubriAndes",
+          "stock_u": 12,
+          "lead_time_dias": 17
+        },
+        {
+          "repuesto_id": "RPT-018",
+          "cantidad": 1,
+          "descripcion": "Filtro de combustible diesel",
+          "proveedor": "Liebherr Repuestos",
+          "stock_u": 38,
+          "lead_time_dias": 4
+        }
+      ],
+      "calendario": []
+    },
+    {
+      "peh_id": "PEH-0012",
+      "plan_id": "PM-TRUCK-STD",
+      "horas": 400,
+      "plan_familia": "Camiones Mineros",
+      "plan_actividad": "Servicio camión minero (hidráulico/frenos)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-003",
+          "cantidad": 1,
+          "descripcion": "Sensor de temperatura Volvo L120H",
+          "proveedor": "ElectroRepuestos Chile",
+          "stock_u": 22,
+          "lead_time_dias": 5
+        },
+        {
+          "repuesto_id": "RPT-007",
+          "cantidad": 1,
+          "descripcion": "Filtro de aire estándar",
+          "proveedor": "AireClean Ltda.",
+          "stock_u": 25,
+          "lead_time_dias": 6
+        },
+        {
+          "repuesto_id": "RPT-004",
+          "cantidad": 1,
+          "descripcion": "Bomba de combustible Sandvik DP1500i",
+          "proveedor": "Repuestos Sandvik Ltda.",
+          "stock_u": 3,
+          "lead_time_dias": 21
+        },
+        {
+          "repuesto_id": "RPT-041",
+          "cantidad": 2,
+          "descripcion": "Correa de distribución",
+          "proveedor": "Antofagasta Parts",
+          "stock_u": 14,
+          "lead_time_dias": 7
+        }
+      ],
+      "calendario": []
+    },
+    {
+      "peh_id": "PEH-0013",
+      "plan_id": "PM-TRUCK-STD",
+      "horas": 800,
+      "plan_familia": "Camiones Mineros",
+      "plan_actividad": "Servicio camión minero (hidráulico/frenos)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-004",
+          "cantidad": 1,
+          "descripcion": "Bomba de combustible Sandvik DP1500i",
+          "proveedor": "Repuestos Sandvik Ltda.",
+          "stock_u": 3,
+          "lead_time_dias": 21
+        },
+        {
+          "repuesto_id": "RPT-007",
+          "cantidad": 1,
+          "descripcion": "Filtro de aire estándar",
+          "proveedor": "AireClean Ltda.",
+          "stock_u": 25,
+          "lead_time_dias": 6
+        },
+        {
+          "repuesto_id": "RPT-003",
+          "cantidad": 1,
+          "descripcion": "Sensor de temperatura Volvo L120H",
+          "proveedor": "ElectroRepuestos Chile",
+          "stock_u": 22,
+          "lead_time_dias": 5
+        },
+        {
+          "repuesto_id": "RPT-036",
+          "cantidad": 3,
+          "descripcion": "Cilindro de freno maestro",
+          "proveedor": "Hitachi Service",
+          "stock_u": 11,
+          "lead_time_dias": 16
+        },
+        {
+          "repuesto_id": "RPT-050",
+          "cantidad": 2,
+          "descripcion": "Sensor de presión de aceite",
+          "proveedor": "CoolingPro",
+          "stock_u": 29,
+          "lead_time_dias": 5
+        }
+      ],
+      "calendario": [
+        {
+          "cal_id": "CAL-0003",
+          "cliente_id": "CL-VENTURA02",
+          "peh_id": "PEH-0013",
+          "actividad": "Servicio camión minero (hidráulico/frenos)",
+          "dias_restantes_est": 29,
+          "due_date_est": "2026-01-30"
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0014",
+      "plan_id": "PM-TRUCK-STD",
+      "horas": 1000,
+      "plan_familia": "Camiones Mineros",
+      "plan_actividad": "Servicio camión minero (hidráulico/frenos)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-007",
+          "cantidad": 2,
+          "descripcion": "Filtro de aire estándar",
+          "proveedor": "AireClean Ltda.",
+          "stock_u": 25,
+          "lead_time_dias": 6
+        },
+        {
+          "repuesto_id": "RPT-003",
+          "cantidad": 2,
+          "descripcion": "Sensor de temperatura Volvo L120H",
+          "proveedor": "ElectroRepuestos Chile",
+          "stock_u": 22,
+          "lead_time_dias": 5
+        },
+        {
+          "repuesto_id": "RPT-004",
+          "cantidad": 1,
+          "descripcion": "Bomba de combustible Sandvik DP1500i",
+          "proveedor": "Repuestos Sandvik Ltda.",
+          "stock_u": 3,
+          "lead_time_dias": 21
+        },
+        {
+          "repuesto_id": "RPT-054",
+          "cantidad": 2,
+          "descripcion": "Sensor de posición del acelerador",
+          "proveedor": "HidroFlex",
+          "stock_u": 14,
+          "lead_time_dias": 4
+        },
+        {
+          "repuesto_id": "RPT-071",
+          "cantidad": 1,
+          "descripcion": "Termostato de motor",
+          "proveedor": "Codelco Repuestos",
+          "stock_u": 5,
+          "lead_time_dias": 16
+        }
+      ],
+      "calendario": []
+    },
+    {
+      "peh_id": "PEH-0015",
+      "plan_id": "PM-TRUCK-STD",
+      "horas": 1200,
+      "plan_familia": "Camiones Mineros",
+      "plan_actividad": "Servicio camión minero (hidráulico/frenos)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-004",
+          "cantidad": 1,
+          "descripcion": "Bomba de combustible Sandvik DP1500i",
+          "proveedor": "Repuestos Sandvik Ltda.",
+          "stock_u": 3,
+          "lead_time_dias": 21
+        },
+        {
+          "repuesto_id": "RPT-001",
+          "cantidad": 1,
+          "descripcion": "Filtro de aceite hidráulico",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 18,
+          "lead_time_dias": 7
+        },
+        {
+          "repuesto_id": "RPT-007",
+          "cantidad": 1,
+          "descripcion": "Filtro de aire estándar",
+          "proveedor": "AireClean Ltda.",
+          "stock_u": 25,
+          "lead_time_dias": 6
+        },
+        {
+          "repuesto_id": "RPT-003",
+          "cantidad": 1,
+          "descripcion": "Sensor de temperatura Volvo L120H",
+          "proveedor": "ElectroRepuestos Chile",
+          "stock_u": 22,
+          "lead_time_dias": 5
+        },
+        {
+          "repuesto_id": "RPT-101",
+          "cantidad": 3,
+          "descripcion": "Válvula de neumático",
+          "proveedor": "Hitachi Service",
+          "stock_u": 8,
+          "lead_time_dias": 26
+        }
+      ],
+      "calendario": []
+    }
+  ],
+  "generado_en": "2026-03-17T22:58:17.881Z"
+}

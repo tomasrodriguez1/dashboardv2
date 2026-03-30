@@ -10,26 +10,29 @@ export interface NeedsFiltersProps {
   cliente: string;
   equipo: string;
   repuesto: string;
+  estadoMantencion: string;
   clientes: Array<{ id: string; nombre: string }>;
   equipos: Array<{ id: string; modelo: string }>;
   repuestos: Array<{ nombre: string; codigo: string }>;
   onClienteChange: (cliente: string) => void;
   onEquipoChange: (equipo: string) => void;
   onRepuestoChange: (repuesto: string) => void;
+  onEstadoMantencionChange: (estado: string) => void;
 }
 
 export function NeedsFilters({
   cliente,
   equipo,
   repuesto,
+  estadoMantencion,
   clientes,
   equipos,
   repuestos,
   onClienteChange,
   onEquipoChange,
   onRepuestoChange,
+  onEstadoMantencionChange,
 }: NeedsFiltersProps) {
-  // Opciones de cliente
   const clienteOptions: SelectOption[] = [
     { value: 'Todos', label: 'Todos los clientes' },
     ...clientes.map(c => ({
@@ -38,7 +41,6 @@ export function NeedsFilters({
     })),
   ];
 
-  // Opciones de equipo
   const equipoOptions: SelectOption[] = [
     { value: 'Todos', label: 'Todos los equipos' },
     ...equipos.map(e => ({
@@ -47,7 +49,6 @@ export function NeedsFilters({
     })),
   ];
 
-  // Opciones de repuesto
   const repuestoOptions: SelectOption[] = [
     { value: 'Todos', label: 'Todos los repuestos' },
     ...repuestos.map(r => ({
@@ -56,17 +57,12 @@ export function NeedsFilters({
     })),
   ];
 
-  const handleClienteChange = (value: string | number) => {
-    onClienteChange(String(value));
-  };
-
-  const handleEquipoChange = (value: string | number) => {
-    onEquipoChange(String(value));
-  };
-
-  const handleRepuestoChange = (value: string | number) => {
-    onRepuestoChange(String(value));
-  };
+  const estadoOptions: SelectOption[] = [
+    { value: 'Todos', label: 'Todos los estados' },
+    { value: 'pendiente', label: 'Pendiente' },
+    { value: 'atrasada', label: 'Atrasada' },
+    { value: 'completada', label: 'Completada' },
+  ];
 
   return (
     <Card className="mb-6">
@@ -74,34 +70,40 @@ export function NeedsFilters({
         <div className="flex items-center justify-between">
           <span className="text-sm font-medium text-gray-700">🔍 Filtros de Repuestos:</span>
           <span className="text-xs text-gray-500 bg-blue-100 px-3 py-1 rounded-full font-medium">
-            📊 Rango: 500 - 3500 horas | 📅 Todas las fechas futuras
+            📊 Rango: 500 - 3500 horas
           </span>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <Select
             label="Cliente"
             value={cliente}
-            onChange={handleClienteChange}
+            onChange={v => onClienteChange(String(v))}
             options={clienteOptions}
           />
-          
+
           <Select
             label="Equipo"
             value={equipo}
-            onChange={handleEquipoChange}
+            onChange={v => onEquipoChange(String(v))}
             options={equipoOptions}
           />
-          
+
           <Select
             label="Repuesto"
             value={repuesto}
-            onChange={handleRepuestoChange}
+            onChange={v => onRepuestoChange(String(v))}
             options={repuestoOptions}
+          />
+
+          <Select
+            label="Estado"
+            value={estadoMantencion}
+            onChange={v => onEstadoMantencionChange(String(v))}
+            options={estadoOptions}
           />
         </div>
       </div>
     </Card>
   );
 }
-

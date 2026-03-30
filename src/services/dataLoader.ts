@@ -6,7 +6,6 @@
  */
 
 import Papa from 'papaparse';
-import * as XLSX from 'xlsx';
 import type {
   PaisRow,
   CategoriaPaisRow,
@@ -43,16 +42,6 @@ interface ClientesCSV {
   '%': string;
   Porcentaje?: string;
   Vendedor: string;
-}
-
-interface MantencionExcelRow {
-  Mantencion_Horas: string | number;
-  Fecha_Estimada: string | number;
-  Repuesto: string;
-  Cantidad: string | number;
-  Intervalo_Repuesto: string | number;
-  Sistema: string;
-  Tipo: string;
 }
 
 // ===========================
@@ -185,78 +174,105 @@ export async function loadClientesChile(): Promise<ClienteRowNormalizado[]> {
     }));
 }
 
+const MANTENCIONES_SOURCE = '/data/mantenciones.json';
+
+interface MantencionJsonRow {
+  mantencion_horas?: number | string;
+  fecha_estimada?: string;
+  repuesto_nombre?: string;
+  cantidad?: number | string;
+  intervalo_repuesto?: number | string;
+  sistema?: string;
+  tipo?: string;
+  estado?: string;
+  cliente_id?: string;
+  cliente_nombre?: string;
+  equipo_id?: string;
+  equipo_modelo?: string;
+  repuesto_codigo?: string;
+}
+
+const DEFAULT_CLIENTE = {
+  id: 'INCIMMET-001',
+  nombre: 'Incimmet',
+};
+
+const DEFAULT_EQUIPO = {
+  id: 'BOOMER-S2-CL',
+  modelo: 'BOOMER S2 - Cerro Lindo',
+};
+
+function ensureString(value?: string): string {
+  if (!value) {
+    return '';
+  }
+  return value.trim();
+}
+
+function ensureNumber(value?: number | string): number {
+  if (typeof value === 'number') {
+    return value;
+  }
+
+  if (typeof value === 'string') {
+    const parsed = Number(value.replace(/,/g, '.'));
+    return Number.isFinite(parsed) ? parsed : 0;
+  }
+
+  return 0;
+}
+
+function generateRepuestoCodigo(name: string): string {
+  const cleaned = name
+    .toUpperCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^A-Z0-9-]/g, '')
+    .replace(/-+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .substring(0, 12);
+
+  return cleaned || 'SIN-CODIGO';
+}
+
 /**
- * Carga y normaliza datos de mantenciones desde Excel.
- * Unifica todas las hojas del archivo en un solo array.
+ * Carga y normaliza datos de mantenciones desde un JSON preparado.
  */
 export async function loadMantenciones(): Promise<MantencionRow[]> {
   try {
-    const response = await fetch('/calendario_mantenciones.xlsx');
-    
+    const response = await fetch(MANTENCIONES_SOURCE);
+
     if (!response.ok) {
-      throw new Error(`Error cargando calendario_mantenciones.xlsx: ${response.statusText}`);
+      throw new Error(`Error cargando ${MANTENCIONES_SOURCE}: ${response.statusText}`);
     }
 
-    const arrayBuffer = await response.arrayBuffer();
-    const workbook = XLSX.read(arrayBuffer, { type: 'array' });
+    const data: MantencionJsonRow[] = await response.json();
 
-    const normalized: MantencionRow[] = [];
-    
-    // Datos reales del cliente y equipo
-    // Fuente: calendario_mantenciones.xlsx es de una sola máquina del cliente Incimmet
-    const cliente = {
-      id: 'INCIMMET-001',
-      nombre: 'Incimmet',
-    };
-    
-    const equipo = {
-      id: 'BOOMER-S2-CL',
-      modelo: 'BOOMER S2 - Cerro Lindo',
-    };
+    const normalized = data.map((row): MantencionRow => {
+      const repuestoNombre = ensureString(row.repuesto_nombre) || 'Sin nombre';
+      const repuestoCodigo = ensureString(row.repuesto_codigo) || generateRepuestoCodigo(repuestoNombre);
 
-    // Procesar cada hoja del Excel
-    workbook.SheetNames.forEach(sheetName => {
-      const worksheet = workbook.Sheets[sheetName];
-      const jsonData = XLSX.utils.sheet_to_json<MantencionExcelRow>(worksheet);
+      const estadoRaw = ensureString(row.estado);
+      const estado: 'pendiente' | 'completada' = estadoRaw === 'completada' ? 'completada' : 'pendiente';
 
-      jsonData.forEach(row => {
-        // Parsear fecha (puede venir como serial number de Excel o string)
-        let fechaISO: string;
-        if (typeof row.Fecha_Estimada === 'number') {
-          // Convertir serial date de Excel a fecha JavaScript
-          const fecha = XLSX.SSF.parse_date_code(row.Fecha_Estimada);
-          fechaISO = `${fecha.y}-${String(fecha.m).padStart(2, '0')}-${String(fecha.d).padStart(2, '0')}`;
-        } else {
-          // Ya es string, asumimos formato ISO
-          fechaISO = String(row.Fecha_Estimada).trim();
-        }
-
-        // Generar código de repuesto basado en el nombre
-        const repuestoCodigo = row.Repuesto
-          .trim()
-          .toUpperCase()
-          .replace(/\s+/g, '-')
-          .substring(0, 12);
-
-        normalized.push({
-          mantencion_horas: Number(row.Mantencion_Horas) || 0,
-          fecha_estimada: fechaISO,
-          repuesto_nombre: row.Repuesto?.trim() || 'Sin nombre',
-          cantidad: Number(row.Cantidad) || 0,
-          intervalo_repuesto: Number(row.Intervalo_Repuesto) || 0,
-          sistema: row.Sistema?.trim() || 'Sin sistema',
-          tipo: row.Tipo?.trim() || 'Preventive',
-          cliente_id: cliente.id,
-          cliente_nombre: cliente.nombre,
-          equipo_id: equipo.id,
-          equipo_modelo: equipo.modelo,
-          repuesto_codigo: repuestoCodigo,
-        });
-      });
+      return {
+        mantencion_horas: ensureNumber(row.mantencion_horas),
+        fecha_estimada: ensureString(row.fecha_estimada),
+        repuesto_nombre: repuestoNombre,
+        cantidad: ensureNumber(row.cantidad),
+        intervalo_repuesto: ensureNumber(row.intervalo_repuesto),
+        sistema: ensureString(row.sistema) || 'Sin sistema',
+        tipo: ensureString(row.tipo) || 'Preventive',
+        estado,
+        cliente_id: ensureString(row.cliente_id) || DEFAULT_CLIENTE.id,
+        cliente_nombre: ensureString(row.cliente_nombre) || DEFAULT_CLIENTE.nombre,
+        equipo_id: ensureString(row.equipo_id) || DEFAULT_EQUIPO.id,
+        equipo_modelo: ensureString(row.equipo_modelo) || DEFAULT_EQUIPO.modelo,
+        repuesto_codigo: repuestoCodigo,
+      };
     });
 
-    console.log(`✅ Cargadas ${normalized.length} mantenciones desde ${workbook.SheetNames.length} hojas`);
-    
+    console.log(`✅ Cargadas ${normalized.length} mantenciones desde ${MANTENCIONES_SOURCE}`);
+
     return normalized;
   } catch (error) {
     console.error('Error cargando mantenciones:', error);

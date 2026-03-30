@@ -120,8 +120,9 @@ export interface MantencionRow {
   cantidad: number;
   intervalo_repuesto: number;
   sistema: string;
-  tipo: string; // "Preventive", etc.
-  
+  tipo: string; // "Preventive", "Major", etc.
+  estado: 'pendiente' | 'completada';
+
   // Datos suplementarios (generados)
   cliente_id: string;
   cliente_nombre: string;

@@ -231,8 +231,14 @@ export function ClientEquipmentNeedsTable({ data }: ClientEquipmentNeedsTablePro
                             equipo.mantenciones.map((mantencion, mantIdx) => {
                               const mantencionKey = `${equipo.equipo_id}-${mantencion.mantencion_horas}-${mantencion.fecha_estimada}-${mantIdx}`;
                               const isMantencionExpanded = expandedMantenciones.has(mantencionKey);
-                              const nivel = leadTimeAlert(mantencion.fecha_estimada, hoy);
-                              const dias = diasRestantes(mantencion.fecha_estimada, hoy);
+                              const nivel =
+                                mantencion.estado === 'completada'
+                                  ? ('COMPLETADA' as const)
+                                  : leadTimeAlert(mantencion.fecha_estimada, hoy);
+                              const dias =
+                                mantencion.estado === 'completada'
+                                  ? undefined
+                                  : diasRestantes(mantencion.fecha_estimada, hoy);
                               const ingresoMantencion = ingresoPotencialAprox(mantencion.total_repuestos);
                               const mantencionSkuCount = countMantencionSkus(mantencion);
 

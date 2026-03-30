@@ -49,7 +49,7 @@ export function DashboardPage() {
   const [activeTab, setActiveTab] = useState<DashboardTab>('ventas');
 
   const filtros = useFilters();
-  const { setPais, toggleCategoria, setTopN, setCliente, setEquipo, setRepuesto } = useFiltersActions();
+  const { setPais, toggleCategoria, setTopN, setCliente, setEquipo, setRepuesto, setEstadoMantencion } = useFiltersActions();
 
   // Cargar datos al montar el componente
   useEffect(() => {
@@ -106,6 +106,7 @@ export function DashboardPage() {
     equipo: filtros.equipo,
     repuesto: filtros.repuesto,
     horizonte: filtros.horizonte,
+    estadoMantencion: filtros.estadoMantencion,
   };
   const needsKPIs = getNeedsKPIs(data, needsFiltros);
   const clientEquipmentNeeds = getClientEquipmentNeeds(data, needsFiltros);
@@ -315,12 +316,14 @@ export function DashboardPage() {
             cliente={filtros.cliente}
             equipo={filtros.equipo}
             repuesto={filtros.repuesto}
+            estadoMantencion={filtros.estadoMantencion}
             clientes={availableClientes}
             equipos={availableEquipos}
             repuestos={availableRepuestos}
             onClienteChange={setCliente}
             onEquipoChange={setEquipo}
             onRepuestoChange={setRepuesto}
+            onEstadoMantencionChange={v => setEstadoMantencion(v as 'Todos' | 'pendiente' | 'completada' | 'atrasada')}
           />
 
           {/* Gráfico y KPIs de necesidades */}
