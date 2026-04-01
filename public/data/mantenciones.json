@@ -438,7 +438,7 @@
   },
   {
     "mantencion_horas": 400,
-    "fecha_estimada": "2026-03-21",
+    "fecha_estimada": "2026-02-09",
     "repuesto_nombre": "Sensor de temperatura Volvo L120H",
     "cantidad": 1,
     "proveedor": "ElectroRepuestos Chile",
@@ -476,7 +476,7 @@
   },
   {
     "mantencion_horas": 1000,
-    "fecha_estimada": "2026-07-29",
+    "fecha_estimada": "2026-06-29",
     "repuesto_nombre": "Sensor de temperatura Volvo L120H",
     "cantidad": 1,
     "proveedor": "ElectroRepuestos Chile",
@@ -495,7 +495,7 @@
   },
   {
     "mantencion_horas": 1000,
-    "fecha_estimada": "2026-07-29",
+    "fecha_estimada": "2026-06-29",
     "repuesto_nombre": "Filtro de aceite hidráulico",
     "cantidad": 2,
     "proveedor": "Suministros Mineros S.A.",
@@ -571,7 +571,7 @@
   },
   {
     "mantencion_horas": 800,
-    "fecha_estimada": "2026-06-09",
+    "fecha_estimada": "2026-02-19",
     "repuesto_nombre": "Sellos hidráulicos Hitachi ZX470",
     "cantidad": 1,
     "proveedor": "Hidráulica Total",
@@ -818,7 +818,7 @@
   },
   {
     "mantencion_horas": 250,
-    "fecha_estimada": "2026-07-19",
+    "fecha_estimada": "2026-03-11",
     "repuesto_nombre": "Manguera hidráulica HD 2\"",
     "cantidad": 3,
     "proveedor": "HidroFlex",
@@ -1502,7 +1502,7 @@
   },
   {
     "mantencion_horas": 400,
-    "fecha_estimada": "2026-03-21",
+    "fecha_estimada": "2026-02-09",
     "repuesto_nombre": "Correa trapezoidal industrial",
     "cantidad": 1,
     "proveedor": "Correas Andinas",
@@ -1521,7 +1521,7 @@
   },
   {
     "mantencion_horas": 400,
-    "fecha_estimada": "2026-03-21",
+    "fecha_estimada": "2026-02-09",
     "repuesto_nombre": "Filtro de aceite hidráulico",
     "cantidad": 1,
     "proveedor": "Suministros Mineros S.A.",
@@ -1578,7 +1578,7 @@
   },
   {
     "mantencion_horas": 1000,
-    "fecha_estimada": "2026-07-29",
+    "fecha_estimada": "2026-06-29",
     "repuesto_nombre": "Correa trapezoidal industrial",
     "cantidad": 1,
     "proveedor": "Correas Andinas",
@@ -1730,7 +1730,7 @@
   },
   {
     "mantencion_horas": 800,
-    "fecha_estimada": "2026-06-09",
+    "fecha_estimada": "2026-02-19",
     "repuesto_nombre": "Filtro de aceite hidráulico",
     "cantidad": 1,
     "proveedor": "Suministros Mineros S.A.",
@@ -1749,7 +1749,7 @@
   },
   {
     "mantencion_horas": 800,
-    "fecha_estimada": "2026-06-09",
+    "fecha_estimada": "2026-02-19",
     "repuesto_nombre": "Filtro de aire estándar",
     "cantidad": 1,
     "proveedor": "AireClean Ltda.",
@@ -2262,7 +2262,7 @@
   },
   {
     "mantencion_horas": 400,
-    "fecha_estimada": "2026-03-21",
+    "fecha_estimada": "2026-02-09",
     "repuesto_nombre": "Líquido de dirección asistida",
     "cantidad": 1,
     "proveedor": "AireClean Ltda.",
@@ -2300,7 +2300,7 @@
   },
   {
     "mantencion_horas": 1000,
-    "fecha_estimada": "2026-07-29",
+    "fecha_estimada": "2026-06-29",
     "repuesto_nombre": "Manguera hidráulica HD 1.5\"",
     "cantidad": 3,
     "proveedor": "Hitachi Service",
@@ -2319,7 +2319,7 @@
   },
   {
     "mantencion_horas": 1000,
-    "fecha_estimada": "2026-07-29",
+    "fecha_estimada": "2026-06-29",
     "repuesto_nombre": "Kit de reparación de transmisión",
     "cantidad": 2,
     "proveedor": "LubriAndes",
@@ -2414,7 +2414,7 @@
   },
   {
     "mantencion_horas": 800,
-    "fecha_estimada": "2026-06-09",
+    "fecha_estimada": "2026-02-19",
     "repuesto_nombre": "Kit de reparación de neumáticos",
     "cantidad": 3,
     "proveedor": "Partes y Servicios CAT",
@@ -2832,7 +2832,7 @@
   },
   {
     "mantencion_horas": 250,
-    "fecha_estimada": "2026-07-19",
+    "fecha_estimada": "2026-03-11",
     "repuesto_nombre": "Rodamiento de eje principal",
     "cantidad": 2,
     "proveedor": "Hidráulica Total",
@@ -2851,7 +2851,7 @@
   },
   {
     "mantencion_horas": 250,
-    "fecha_estimada": "2026-07-19",
+    "fecha_estimada": "2026-03-11",
     "repuesto_nombre": "Radiador de aire acondicionado",
     "cantidad": 1,
     "proveedor": "HidroFlex",
