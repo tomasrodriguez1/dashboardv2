@@ -1,0 +1,237 @@
+{
+  "cliente": {
+    "cliente_id": "CL-VENTURA01",
+    "nombre": "Minera Los Andes"
+  },
+  "equipo": {
+    "equipo_id": "EQ-3004",
+    "modelo": "Volvo L350H",
+    "fabricante": "Volvo",
+    "serie": "VOL-L350H-2024-411",
+    "tasa_uso_horas_dia": 6,
+    "critico": true
+  },
+  "mantenciones": [
+    {
+      "peh_id": "PEH-0016",
+      "plan_id": "PM-LOADER-STD",
+      "horas": 200,
+      "plan_familia": "Cargadores Frontales",
+      "plan_actividad": "Servicio cargador frontal (correas/sensores)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-008",
+          "cantidad": 2,
+          "descripcion": "Correa trapezoidal industrial",
+          "proveedor": "Correas Andinas",
+          "stock_u": 12,
+          "lead_time_dias": 9
+        },
+        {
+          "repuesto_id": "RPT-003",
+          "cantidad": 1,
+          "descripcion": "Sensor de temperatura Volvo L120H",
+          "proveedor": "ElectroRepuestos Chile",
+          "stock_u": 22,
+          "lead_time_dias": 5
+        },
+        {
+          "repuesto_id": "RPT-001",
+          "cantidad": 1,
+          "descripcion": "Filtro de aceite hidráulico",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 18,
+          "lead_time_dias": 7
+        },
+        {
+          "repuesto_id": "RPT-018",
+          "cantidad": 3,
+          "descripcion": "Filtro de combustible diesel",
+          "proveedor": "Liebherr Repuestos",
+          "stock_u": 38,
+          "lead_time_dias": 4
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0017",
+      "plan_id": "PM-LOADER-STD",
+      "horas": 400,
+      "plan_familia": "Cargadores Frontales",
+      "plan_actividad": "Servicio cargador frontal (correas/sensores)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-003",
+          "cantidad": 1,
+          "descripcion": "Sensor de temperatura Volvo L120H",
+          "proveedor": "ElectroRepuestos Chile",
+          "stock_u": 22,
+          "lead_time_dias": 5
+        },
+        {
+          "repuesto_id": "RPT-008",
+          "cantidad": 1,
+          "descripcion": "Correa trapezoidal industrial",
+          "proveedor": "Correas Andinas",
+          "stock_u": 12,
+          "lead_time_dias": 9
+        },
+        {
+          "repuesto_id": "RPT-001",
+          "cantidad": 1,
+          "descripcion": "Filtro de aceite hidráulico",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 18,
+          "lead_time_dias": 7
+        },
+        {
+          "repuesto_id": "RPT-128",
+          "cantidad": 1,
+          "descripcion": "Líquido de dirección asistida",
+          "proveedor": "AireClean Ltda.",
+          "stock_u": 15,
+          "lead_time_dias": 19
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0018",
+      "plan_id": "PM-LOADER-STD",
+      "horas": 800,
+      "plan_familia": "Cargadores Frontales",
+      "plan_actividad": "Servicio cargador frontal (correas/sensores)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-001",
+          "cantidad": 2,
+          "descripcion": "Filtro de aceite hidráulico",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 18,
+          "lead_time_dias": 7
+        },
+        {
+          "repuesto_id": "RPT-008",
+          "cantidad": 1,
+          "descripcion": "Correa trapezoidal industrial",
+          "proveedor": "Correas Andinas",
+          "stock_u": 12,
+          "lead_time_dias": 9
+        },
+        {
+          "repuesto_id": "RPT-003",
+          "cantidad": 1,
+          "descripcion": "Sensor de temperatura Volvo L120H",
+          "proveedor": "ElectroRepuestos Chile",
+          "stock_u": 22,
+          "lead_time_dias": 5
+        },
+        {
+          "repuesto_id": "RPT-060",
+          "cantidad": 1,
+          "descripcion": "Rodamiento de rueda trasera",
+          "proveedor": "CoolingPro",
+          "stock_u": 13,
+          "lead_time_dias": 18
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0019",
+      "plan_id": "PM-LOADER-STD",
+      "horas": 1000,
+      "plan_familia": "Cargadores Frontales",
+      "plan_actividad": "Servicio cargador frontal (correas/sensores)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-003",
+          "cantidad": 1,
+          "descripcion": "Sensor de temperatura Volvo L120H",
+          "proveedor": "ElectroRepuestos Chile",
+          "stock_u": 22,
+          "lead_time_dias": 5
+        },
+        {
+          "repuesto_id": "RPT-001",
+          "cantidad": 2,
+          "descripcion": "Filtro de aceite hidráulico",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 18,
+          "lead_time_dias": 7
+        },
+        {
+          "repuesto_id": "RPT-008",
+          "cantidad": 1,
+          "descripcion": "Correa trapezoidal industrial",
+          "proveedor": "Correas Andinas",
+          "stock_u": 12,
+          "lead_time_dias": 9
+        },
+        {
+          "repuesto_id": "RPT-024",
+          "cantidad": 3,
+          "descripcion": "Manguera hidráulica HD 1.5\"",
+          "proveedor": "Hitachi Service",
+          "stock_u": 6,
+          "lead_time_dias": 9
+        },
+        {
+          "repuesto_id": "RPT-113",
+          "cantidad": 2,
+          "descripcion": "Kit de reparación de transmisión",
+          "proveedor": "LubriAndes",
+          "stock_u": 21,
+          "lead_time_dias": 19
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0020",
+      "plan_id": "PM-LOADER-STD",
+      "horas": 1200,
+      "plan_familia": "Cargadores Frontales",
+      "plan_actividad": "Servicio cargador frontal (correas/sensores)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-006",
+          "cantidad": 1,
+          "descripcion": "Válvula control presión Liebherr PR776",
+          "proveedor": "TecnoMinería SpA",
+          "stock_u": 8,
+          "lead_time_dias": 18
+        },
+        {
+          "repuesto_id": "RPT-008",
+          "cantidad": 1,
+          "descripcion": "Correa trapezoidal industrial",
+          "proveedor": "Correas Andinas",
+          "stock_u": 12,
+          "lead_time_dias": 9
+        },
+        {
+          "repuesto_id": "RPT-003",
+          "cantidad": 1,
+          "descripcion": "Sensor de temperatura Volvo L120H",
+          "proveedor": "ElectroRepuestos Chile",
+          "stock_u": 22,
+          "lead_time_dias": 5
+        },
+        {
+          "repuesto_id": "RPT-001",
+          "cantidad": 1,
+          "descripcion": "Filtro de aceite hidráulico",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 18,
+          "lead_time_dias": 7
+        },
+        {
+          "repuesto_id": "RPT-048",
+          "cantidad": 1,
+          "descripcion": "Correa de transmisión",
+          "proveedor": "Repuestos Andinos",
+          "stock_u": 14,
+          "lead_time_dias": 8
+        }
+      ]
+    }
+  ]
+}

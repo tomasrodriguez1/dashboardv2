@@ -1,0 +1,237 @@
+{
+  "cliente": {
+    "cliente_id": "CL-VENTURA04",
+    "nombre": "Ventura Mining"
+  },
+  "equipo": {
+    "equipo_id": "EQ-3005",
+    "modelo": "Hitachi EX1200",
+    "fabricante": "Hitachi",
+    "serie": "HIT-EX1200-2025-521",
+    "tasa_uso_horas_dia": 11,
+    "critico": true
+  },
+  "mantenciones": [
+    {
+      "peh_id": "PEH-0021",
+      "plan_id": "PM-EXCAV-STD",
+      "horas": 200,
+      "plan_familia": "Excavadoras",
+      "plan_actividad": "Servicio excavadora y lubricación",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-005",
+          "cantidad": 1,
+          "descripcion": "Sellos hidráulicos Hitachi ZX470",
+          "proveedor": "Hidráulica Total",
+          "stock_u": 15,
+          "lead_time_dias": 10
+        },
+        {
+          "repuesto_id": "RPT-001",
+          "cantidad": 1,
+          "descripcion": "Filtro de aceite hidráulico",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 18,
+          "lead_time_dias": 7
+        },
+        {
+          "repuesto_id": "RPT-007",
+          "cantidad": 1,
+          "descripcion": "Filtro de aire estándar",
+          "proveedor": "AireClean Ltda.",
+          "stock_u": 25,
+          "lead_time_dias": 6
+        },
+        {
+          "repuesto_id": "RPT-035",
+          "cantidad": 4,
+          "descripcion": "Disco de freno trasero",
+          "proveedor": "Repuestos BHP",
+          "stock_u": 12,
+          "lead_time_dias": 8
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0022",
+      "plan_id": "PM-EXCAV-STD",
+      "horas": 400,
+      "plan_familia": "Excavadoras",
+      "plan_actividad": "Servicio excavadora y lubricación",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-001",
+          "cantidad": 3,
+          "descripcion": "Filtro de aceite hidráulico",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 18,
+          "lead_time_dias": 7
+        },
+        {
+          "repuesto_id": "RPT-005",
+          "cantidad": 1,
+          "descripcion": "Sellos hidráulicos Hitachi ZX470",
+          "proveedor": "Hidráulica Total",
+          "stock_u": 15,
+          "lead_time_dias": 10
+        },
+        {
+          "repuesto_id": "RPT-007",
+          "cantidad": 1,
+          "descripcion": "Filtro de aire estándar",
+          "proveedor": "AireClean Ltda.",
+          "stock_u": 25,
+          "lead_time_dias": 6
+        },
+        {
+          "repuesto_id": "RPT-047",
+          "cantidad": 1,
+          "descripcion": "Correa de bomba hidráulica",
+          "proveedor": "Atacama Repuestos",
+          "stock_u": 21,
+          "lead_time_dias": 8
+        },
+        {
+          "repuesto_id": "RPT-072",
+          "cantidad": 1,
+          "descripcion": "Bomba de agua",
+          "proveedor": "Repuestos BHP",
+          "stock_u": 6,
+          "lead_time_dias": 23
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0023",
+      "plan_id": "PM-EXCAV-STD",
+      "horas": 800,
+      "plan_familia": "Excavadoras",
+      "plan_actividad": "Servicio excavadora y lubricación",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-005",
+          "cantidad": 1,
+          "descripcion": "Sellos hidráulicos Hitachi ZX470",
+          "proveedor": "Hidráulica Total",
+          "stock_u": 15,
+          "lead_time_dias": 10
+        },
+        {
+          "repuesto_id": "RPT-001",
+          "cantidad": 1,
+          "descripcion": "Filtro de aceite hidráulico",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 18,
+          "lead_time_dias": 7
+        },
+        {
+          "repuesto_id": "RPT-007",
+          "cantidad": 1,
+          "descripcion": "Filtro de aire estándar",
+          "proveedor": "AireClean Ltda.",
+          "stock_u": 25,
+          "lead_time_dias": 6
+        },
+        {
+          "repuesto_id": "RPT-133",
+          "cantidad": 3,
+          "descripcion": "Kit de reparación de neumáticos",
+          "proveedor": "Partes y Servicios CAT",
+          "stock_u": 5,
+          "lead_time_dias": 6
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0024",
+      "plan_id": "PM-EXCAV-STD",
+      "horas": 1000,
+      "plan_familia": "Excavadoras",
+      "plan_actividad": "Servicio excavadora y lubricación",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-001",
+          "cantidad": 1,
+          "descripcion": "Filtro de aceite hidráulico",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 18,
+          "lead_time_dias": 7
+        },
+        {
+          "repuesto_id": "RPT-007",
+          "cantidad": 1,
+          "descripcion": "Filtro de aire estándar",
+          "proveedor": "AireClean Ltda.",
+          "stock_u": 25,
+          "lead_time_dias": 6
+        },
+        {
+          "repuesto_id": "RPT-005",
+          "cantidad": 1,
+          "descripcion": "Sellos hidráulicos Hitachi ZX470",
+          "proveedor": "Hidráulica Total",
+          "stock_u": 15,
+          "lead_time_dias": 10
+        },
+        {
+          "repuesto_id": "RPT-034",
+          "cantidad": 2,
+          "descripcion": "Disco de freno delantero",
+          "proveedor": "MineríaParts Chile",
+          "stock_u": 5,
+          "lead_time_dias": 17
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0025",
+      "plan_id": "PM-EXCAV-STD",
+      "horas": 1200,
+      "plan_familia": "Excavadoras",
+      "plan_actividad": "Servicio excavadora y lubricación",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-005",
+          "cantidad": 1,
+          "descripcion": "Sellos hidráulicos Hitachi ZX470",
+          "proveedor": "Hidráulica Total",
+          "stock_u": 15,
+          "lead_time_dias": 10
+        },
+        {
+          "repuesto_id": "RPT-001",
+          "cantidad": 1,
+          "descripcion": "Filtro de aceite hidráulico",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 18,
+          "lead_time_dias": 7
+        },
+        {
+          "repuesto_id": "RPT-007",
+          "cantidad": 1,
+          "descripcion": "Filtro de aire estándar",
+          "proveedor": "AireClean Ltda.",
+          "stock_u": 25,
+          "lead_time_dias": 6
+        },
+        {
+          "repuesto_id": "RPT-065",
+          "cantidad": 1,
+          "descripcion": "Rodamiento de compresor",
+          "proveedor": "Codelco Repuestos",
+          "stock_u": 16,
+          "lead_time_dias": 9
+        },
+        {
+          "repuesto_id": "RPT-092",
+          "cantidad": 1,
+          "descripcion": "Lámpara de trabajo LED",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 20,
+          "lead_time_dias": 9
+        }
+      ]
+    }
+  ]
+}

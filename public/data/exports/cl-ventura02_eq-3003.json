@@ -59,8 +59,7 @@
           "stock_u": 38,
           "lead_time_dias": 4
         }
-      ],
-      "calendario": []
+      ]
     },
     {
       "peh_id": "PEH-0012",
@@ -101,8 +100,7 @@
           "stock_u": 14,
           "lead_time_dias": 7
         }
-      ],
-      "calendario": []
+      ]
     },
     {
       "peh_id": "PEH-0013",
@@ -150,16 +148,6 @@
           "proveedor": "CoolingPro",
           "stock_u": 29,
           "lead_time_dias": 5
-        }
-      ],
-      "calendario": [
-        {
-          "cal_id": "CAL-0003",
-          "cliente_id": "CL-VENTURA02",
-          "peh_id": "PEH-0013",
-          "actividad": "Servicio camión minero (hidráulico/frenos)",
-          "dias_restantes_est": 29,
-          "due_date_est": "2026-01-30"
         }
       ]
     },
@@ -210,8 +198,7 @@
           "stock_u": 5,
           "lead_time_dias": 16
         }
-      ],
-      "calendario": []
+      ]
     },
     {
       "peh_id": "PEH-0015",
@@ -260,9 +247,7 @@
           "stock_u": 8,
           "lead_time_dias": 26
         }
-      ],
-      "calendario": []
+      ]
     }
-  ],
-  "generado_en": "2026-03-17T22:58:17.881Z"
+  ]
 }

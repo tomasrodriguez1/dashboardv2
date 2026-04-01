@@ -1,0 +1,147 @@
+{
+  "cliente": {
+    "cliente_id": "CL-VENTURA03",
+    "nombre": "Minera Sur"
+  },
+  "equipo": {
+    "equipo_id": "EQ-3006",
+    "modelo": "CAT D10T2",
+    "fabricante": "Caterpillar",
+    "serie": "CATD10T2-2023-119",
+    "tasa_uso_horas_dia": 9,
+    "critico": true
+  },
+  "mantenciones": [
+    {
+      "peh_id": "PEH-0026",
+      "plan_id": "PM-DOZER-STD",
+      "horas": 250,
+      "plan_familia": "Tractores Oruga",
+      "plan_actividad": "Servicio tractor oruga (rodaje/enfriamiento)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-011",
+          "cantidad": 2,
+          "descripcion": "Kit rodamiento rodillo guía",
+          "proveedor": "BearingMax",
+          "stock_u": 14,
+          "lead_time_dias": 12
+        },
+        {
+          "repuesto_id": "RPT-009",
+          "cantidad": 1,
+          "descripcion": "Radiador de alta eficiencia",
+          "proveedor": "CoolingPro",
+          "stock_u": 4,
+          "lead_time_dias": 20
+        },
+        {
+          "repuesto_id": "RPT-098",
+          "cantidad": 2,
+          "descripcion": "Neumático 29.5R25",
+          "proveedor": "Repuestos Komatsu",
+          "stock_u": 6,
+          "lead_time_dias": 18
+        },
+        {
+          "repuesto_id": "RPT-086",
+          "cantidad": 1,
+          "descripcion": "Alternador 24V 150A",
+          "proveedor": "Hidráulica Total",
+          "stock_u": 15,
+          "lead_time_dias": 8
+        },
+        {
+          "repuesto_id": "RPT-033",
+          "cantidad": 3,
+          "descripcion": "Pastillas de freno traseras",
+          "proveedor": "Repuestos Mineros Premium",
+          "stock_u": 9,
+          "lead_time_dias": 13
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0027",
+      "plan_id": "PM-DOZER-STD",
+      "horas": 500,
+      "plan_familia": "Tractores Oruga",
+      "plan_actividad": "Servicio tractor oruga (rodaje/enfriamiento)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-011",
+          "cantidad": 2,
+          "descripcion": "Kit rodamiento rodillo guía",
+          "proveedor": "BearingMax",
+          "stock_u": 14,
+          "lead_time_dias": 12
+        },
+        {
+          "repuesto_id": "RPT-013",
+          "cantidad": 2,
+          "descripcion": "Aceite sintético 15W-40",
+          "proveedor": "LubriAndes",
+          "stock_u": 200,
+          "lead_time_dias": 3
+        },
+        {
+          "repuesto_id": "RPT-020",
+          "cantidad": 3,
+          "descripcion": "Filtro de aire turbo",
+          "proveedor": "Hitachi Service",
+          "stock_u": 30,
+          "lead_time_dias": 5
+        },
+        {
+          "repuesto_id": "RPT-103",
+          "cantidad": 2,
+          "descripcion": "Líquido sellador",
+          "proveedor": "Hidráulica Total",
+          "stock_u": 4,
+          "lead_time_dias": 30
+        },
+        {
+          "repuesto_id": "RPT-055",
+          "cantidad": 1,
+          "descripcion": "Sensor de oxígeno",
+          "proveedor": "Metso Outotec Parts",
+          "stock_u": 16,
+          "lead_time_dias": 5
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0028",
+      "plan_id": "PM-DOZER-STD",
+      "horas": 1000,
+      "plan_familia": "Tractores Oruga",
+      "plan_actividad": "Servicio tractor oruga (rodaje/enfriamiento)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-009",
+          "cantidad": 1,
+          "descripcion": "Radiador de alta eficiencia",
+          "proveedor": "CoolingPro",
+          "stock_u": 4,
+          "lead_time_dias": 20
+        },
+        {
+          "repuesto_id": "RPT-054",
+          "cantidad": 2,
+          "descripcion": "Sensor de posición del acelerador",
+          "proveedor": "HidroFlex",
+          "stock_u": 14,
+          "lead_time_dias": 4
+        },
+        {
+          "repuesto_id": "RPT-124",
+          "cantidad": 2,
+          "descripcion": "Cable de freno de estacionamiento",
+          "proveedor": "Hitachi Service",
+          "stock_u": 10,
+          "lead_time_dias": 7
+        }
+      ]
+    }
+  ]
+}

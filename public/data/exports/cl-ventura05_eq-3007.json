@@ -1,0 +1,147 @@
+{
+  "cliente": {
+    "cliente_id": "CL-VENTURA05",
+    "nombre": "Altiplano Minerals"
+  },
+  "equipo": {
+    "equipo_id": "EQ-3007",
+    "modelo": "Komatsu WA900-8",
+    "fabricante": "Komatsu",
+    "serie": "KOMWA900-2022-067",
+    "tasa_uso_horas_dia": 7,
+    "critico": true
+  },
+  "mantenciones": [
+    {
+      "peh_id": "PEH-0029",
+      "plan_id": "PM-LOADER-STD",
+      "horas": 200,
+      "plan_familia": "Cargadores Frontales",
+      "plan_actividad": "Servicio cargador frontal (correas/sensores)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-008",
+          "cantidad": 1,
+          "descripcion": "Correa trapezoidal industrial",
+          "proveedor": "Correas Andinas",
+          "stock_u": 12,
+          "lead_time_dias": 9
+        },
+        {
+          "repuesto_id": "RPT-067",
+          "cantidad": 2,
+          "descripcion": "Rodamiento de dirección",
+          "proveedor": "Codelco Repuestos",
+          "stock_u": 12,
+          "lead_time_dias": 11
+        },
+        {
+          "repuesto_id": "RPT-072",
+          "cantidad": 1,
+          "descripcion": "Bomba de agua",
+          "proveedor": "Repuestos BHP",
+          "stock_u": 6,
+          "lead_time_dias": 23
+        },
+        {
+          "repuesto_id": "RPT-092",
+          "cantidad": 1,
+          "descripcion": "Lámpara de trabajo LED",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 20,
+          "lead_time_dias": 9
+        },
+        {
+          "repuesto_id": "RPT-090",
+          "cantidad": 1,
+          "descripcion": "Relé de arranque",
+          "proveedor": "FuelClean",
+          "stock_u": 7,
+          "lead_time_dias": 6
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0030",
+      "plan_id": "PM-LOADER-STD",
+      "horas": 400,
+      "plan_familia": "Cargadores Frontales",
+      "plan_actividad": "Servicio cargador frontal (correas/sensores)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-003",
+          "cantidad": 1,
+          "descripcion": "Sensor de temperatura Volvo L120H",
+          "proveedor": "ElectroRepuestos Chile",
+          "stock_u": 22,
+          "lead_time_dias": 5
+        },
+        {
+          "repuesto_id": "RPT-099",
+          "cantidad": 4,
+          "descripcion": "Cámara de aire 23.5R25",
+          "proveedor": "Partes y Servicios CAT",
+          "stock_u": 4,
+          "lead_time_dias": 21
+        },
+        {
+          "repuesto_id": "RPT-057",
+          "cantidad": 1,
+          "descripcion": "Sensor de temperatura hidráulica",
+          "proveedor": "Hidráulica Total",
+          "stock_u": 15,
+          "lead_time_dias": 5
+        },
+        {
+          "repuesto_id": "RPT-135",
+          "cantidad": 2,
+          "descripcion": "Kit de reparación de ruedas",
+          "proveedor": "Metso Outotec Parts",
+          "stock_u": 10,
+          "lead_time_dias": 14
+        },
+        {
+          "repuesto_id": "RPT-064",
+          "cantidad": 1,
+          "descripcion": "Rodamiento de ventilador",
+          "proveedor": "Atacama Repuestos",
+          "stock_u": 17,
+          "lead_time_dias": 16
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0031",
+      "plan_id": "PM-LOADER-STD",
+      "horas": 800,
+      "plan_familia": "Cargadores Frontales",
+      "plan_actividad": "Servicio cargador frontal (correas/sensores)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-001",
+          "cantidad": 1,
+          "descripcion": "Filtro de aceite hidráulico",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 18,
+          "lead_time_dias": 7
+        },
+        {
+          "repuesto_id": "RPT-129",
+          "cantidad": 1,
+          "descripcion": "Kit de reparación de suspensión",
+          "proveedor": "Liebherr Repuestos",
+          "stock_u": 23,
+          "lead_time_dias": 11
+        },
+        {
+          "repuesto_id": "RPT-059",
+          "cantidad": 2,
+          "descripcion": "Rodamiento de rueda delantera",
+          "proveedor": "Repuestos Andinos",
+          "stock_u": 17,
+          "lead_time_dias": 12
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "cliente": {
+    "cliente_id": "CL-VENTURA08",
+    "nombre": "Minera Pacífico"
+  },
+  "equipo": {
+    "equipo_id": "EQ-3010",
+    "modelo": "Epiroc Boomer E2",
+    "fabricante": "Epiroc",
+    "serie": "EPB-E2-2024-110",
+    "tasa_uso_horas_dia": 7,
+    "critico": true
+  },
+  "mantenciones": [
+    {
+      "peh_id": "PEH-0037",
+      "plan_id": "PM-DRILL-STD",
+      "horas": 250,
+      "plan_familia": "Perforadoras",
+      "plan_actividad": "Servicio perforadora (martillo/circulación)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-139",
+          "cantidad": 1,
+          "descripcion": "Cabezal de martillo Epiroc Boomer",
+          "proveedor": "Epiroc Plus",
+          "stock_u": 5,
+          "lead_time_dias": 15
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0038",
+      "plan_id": "PM-DRILL-STD",
+      "horas": 500,
+      "plan_familia": "Perforadoras",
+      "plan_actividad": "Servicio perforadora (martillo/circulación)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-139",
+          "cantidad": 1,
+          "descripcion": "Cabezal de martillo Epiroc Boomer",
+          "proveedor": "Epiroc Plus",
+          "stock_u": 5,
+          "lead_time_dias": 15
+        },
+        {
+          "repuesto_id": "RPT-140",
+          "cantidad": 2,
+          "descripcion": "Manga de perforación E2",
+          "proveedor": "Forjas Austral",
+          "stock_u": 7,
+          "lead_time_dias": 20
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0039",
+      "plan_id": "PM-DRILL-STD",
+      "horas": 900,
+      "plan_familia": "Perforadoras",
+      "plan_actividad": "Servicio perforadora (martillo/circulación)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-140",
+          "cantidad": 1,
+          "descripcion": "Manga de perforación E2",
+          "proveedor": "Forjas Austral",
+          "stock_u": 7,
+          "lead_time_dias": 20
+        },
+        {
+          "repuesto_id": "RPT-137",
+          "cantidad": 1,
+          "descripcion": "Rodamiento de rodillos D11T",
+          "proveedor": "Rodamientos del Sur",
+          "stock_u": 6,
+          "lead_time_dias": 12
+        }
+      ]
+    }
+  ]
+}

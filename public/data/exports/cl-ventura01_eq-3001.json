@@ -1,0 +1,285 @@
+{
+  "cliente": {
+    "cliente_id": "CL-VENTURA01",
+    "nombre": "Minera Los Andes"
+  },
+  "equipo": {
+    "equipo_id": "EQ-3001",
+    "modelo": "CAT 320D",
+    "fabricante": "Caterpillar",
+    "serie": "CAT32D-2023-301",
+    "tasa_uso_horas_dia": 12,
+    "critico": true
+  },
+  "mantenciones": [
+    {
+      "peh_id": "PEH-0001",
+      "plan_id": "PM-EXCAV-STD",
+      "horas": 200,
+      "plan_familia": "Excavadoras",
+      "plan_actividad": "Servicio excavadora y lubricación",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-001",
+          "cantidad": 3,
+          "descripcion": "Filtro de aceite hidráulico",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 18,
+          "lead_time_dias": 7
+        },
+        {
+          "repuesto_id": "RPT-007",
+          "cantidad": 1,
+          "descripcion": "Filtro de aire estándar",
+          "proveedor": "AireClean Ltda.",
+          "stock_u": 25,
+          "lead_time_dias": 6
+        },
+        {
+          "repuesto_id": "RPT-008",
+          "cantidad": 1,
+          "descripcion": "Correa trapezoidal industrial",
+          "proveedor": "Correas Andinas",
+          "stock_u": 12,
+          "lead_time_dias": 9
+        },
+        {
+          "repuesto_id": "RPT-003",
+          "cantidad": 1,
+          "descripcion": "Sensor de temperatura Volvo L120H",
+          "proveedor": "ElectroRepuestos Chile",
+          "stock_u": 22,
+          "lead_time_dias": 5
+        },
+        {
+          "repuesto_id": "RPT-106",
+          "cantidad": 4,
+          "descripcion": "Martillo hidráulico para excavadora",
+          "proveedor": "FLSmidth Chile",
+          "stock_u": 7,
+          "lead_time_dias": 15
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0002",
+      "plan_id": "PM-EXCAV-STD",
+      "horas": 400,
+      "plan_familia": "Excavadoras",
+      "plan_actividad": "Servicio excavadora y lubricación",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-008",
+          "cantidad": 2,
+          "descripcion": "Correa trapezoidal industrial",
+          "proveedor": "Correas Andinas",
+          "stock_u": 12,
+          "lead_time_dias": 9
+        },
+        {
+          "repuesto_id": "RPT-001",
+          "cantidad": 1,
+          "descripcion": "Filtro de aceite hidráulico",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 18,
+          "lead_time_dias": 7
+        },
+        {
+          "repuesto_id": "RPT-007",
+          "cantidad": 1,
+          "descripcion": "Filtro de aire estándar",
+          "proveedor": "AireClean Ltda.",
+          "stock_u": 25,
+          "lead_time_dias": 6
+        },
+        {
+          "repuesto_id": "RPT-003",
+          "cantidad": 1,
+          "descripcion": "Sensor de temperatura Volvo L120H",
+          "proveedor": "ElectroRepuestos Chile",
+          "stock_u": 22,
+          "lead_time_dias": 5
+        },
+        {
+          "repuesto_id": "RPT-091",
+          "cantidad": 1,
+          "descripcion": "Cable de batería 25mm²",
+          "proveedor": "Minería del Norte",
+          "stock_u": 6,
+          "lead_time_dias": 10
+        },
+        {
+          "repuesto_id": "RPT-108",
+          "cantidad": 4,
+          "descripcion": "Diente de cuchara estándar",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 14,
+          "lead_time_dias": 20
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0003",
+      "plan_id": "PM-EXCAV-STD",
+      "horas": 800,
+      "plan_familia": "Excavadoras",
+      "plan_actividad": "Servicio excavadora y lubricación",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-003",
+          "cantidad": 1,
+          "descripcion": "Sensor de temperatura Volvo L120H",
+          "proveedor": "ElectroRepuestos Chile",
+          "stock_u": 22,
+          "lead_time_dias": 5
+        },
+        {
+          "repuesto_id": "RPT-001",
+          "cantidad": 3,
+          "descripcion": "Filtro de aceite hidráulico",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 18,
+          "lead_time_dias": 7
+        },
+        {
+          "repuesto_id": "RPT-007",
+          "cantidad": 1,
+          "descripcion": "Filtro de aire estándar",
+          "proveedor": "AireClean Ltda.",
+          "stock_u": 25,
+          "lead_time_dias": 6
+        },
+        {
+          "repuesto_id": "RPT-008",
+          "cantidad": 1,
+          "descripcion": "Correa trapezoidal industrial",
+          "proveedor": "Correas Andinas",
+          "stock_u": 12,
+          "lead_time_dias": 9
+        },
+        {
+          "repuesto_id": "RPT-073",
+          "cantidad": 2,
+          "descripcion": "Manguera de refrigerante",
+          "proveedor": "Correas Andinas",
+          "stock_u": 10,
+          "lead_time_dias": 23
+        },
+        {
+          "repuesto_id": "RPT-024",
+          "cantidad": 3,
+          "descripcion": "Manguera hidráulica HD 1.5\"",
+          "proveedor": "Hitachi Service",
+          "stock_u": 6,
+          "lead_time_dias": 9
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0004",
+      "plan_id": "PM-EXCAV-STD",
+      "horas": 1000,
+      "plan_familia": "Excavadoras",
+      "plan_actividad": "Servicio excavadora y lubricación",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-007",
+          "cantidad": 1,
+          "descripcion": "Filtro de aire estándar",
+          "proveedor": "AireClean Ltda.",
+          "stock_u": 25,
+          "lead_time_dias": 6
+        },
+        {
+          "repuesto_id": "RPT-001",
+          "cantidad": 1,
+          "descripcion": "Filtro de aceite hidráulico",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 18,
+          "lead_time_dias": 7
+        },
+        {
+          "repuesto_id": "RPT-008",
+          "cantidad": 1,
+          "descripcion": "Correa trapezoidal industrial",
+          "proveedor": "Correas Andinas",
+          "stock_u": 12,
+          "lead_time_dias": 9
+        },
+        {
+          "repuesto_id": "RPT-003",
+          "cantidad": 1,
+          "descripcion": "Sensor de temperatura Volvo L120H",
+          "proveedor": "ElectroRepuestos Chile",
+          "stock_u": 22,
+          "lead_time_dias": 5
+        },
+        {
+          "repuesto_id": "RPT-094",
+          "cantidad": 2,
+          "descripcion": "Cable de tierra",
+          "proveedor": "Hidráulica Total",
+          "stock_u": 9,
+          "lead_time_dias": 7
+        },
+        {
+          "repuesto_id": "RPT-057",
+          "cantidad": 2,
+          "descripcion": "Sensor de temperatura hidráulica",
+          "proveedor": "Hidráulica Total",
+          "stock_u": 15,
+          "lead_time_dias": 5
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0005",
+      "plan_id": "PM-EXCAV-STD",
+      "horas": 1200,
+      "plan_familia": "Excavadoras",
+      "plan_actividad": "Servicio excavadora y lubricación",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-001",
+          "cantidad": 2,
+          "descripcion": "Filtro de aceite hidráulico",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 18,
+          "lead_time_dias": 7
+        },
+        {
+          "repuesto_id": "RPT-008",
+          "cantidad": 1,
+          "descripcion": "Correa trapezoidal industrial",
+          "proveedor": "Correas Andinas",
+          "stock_u": 12,
+          "lead_time_dias": 9
+        },
+        {
+          "repuesto_id": "RPT-007",
+          "cantidad": 1,
+          "descripcion": "Filtro de aire estándar",
+          "proveedor": "AireClean Ltda.",
+          "stock_u": 25,
+          "lead_time_dias": 6
+        },
+        {
+          "repuesto_id": "RPT-003",
+          "cantidad": 1,
+          "descripcion": "Sensor de temperatura Volvo L120H",
+          "proveedor": "ElectroRepuestos Chile",
+          "stock_u": 22,
+          "lead_time_dias": 5
+        },
+        {
+          "repuesto_id": "RPT-080",
+          "cantidad": 1,
+          "descripcion": "Aceite de diferencial",
+          "proveedor": "Repuestos Komatsu",
+          "stock_u": 156,
+          "lead_time_dias": 4
+        }
+      ]
+    }
+  ]
+}

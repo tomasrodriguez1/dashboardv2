@@ -1,0 +1,253 @@
+{
+  "cliente": {
+    "cliente_id": "CL-VENTURA02",
+    "nombre": "Minera Patagónica"
+  },
+  "equipo": {
+    "equipo_id": "EQ-3002",
+    "modelo": "Komatsu HD785-7",
+    "fabricante": "Komatsu",
+    "serie": "KOMHD785-2022-245",
+    "tasa_uso_horas_dia": 10,
+    "critico": true
+  },
+  "mantenciones": [
+    {
+      "peh_id": "PEH-0006",
+      "plan_id": "PM-TRUCK-STD",
+      "horas": 200,
+      "plan_familia": "Camiones Mineros",
+      "plan_actividad": "Servicio camión minero (hidráulico/frenos)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-001",
+          "cantidad": 1,
+          "descripcion": "Filtro de aceite hidráulico",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 18,
+          "lead_time_dias": 7
+        },
+        {
+          "repuesto_id": "RPT-002",
+          "cantidad": 1,
+          "descripcion": "Kit pastillas de freno CAT 777F",
+          "proveedor": "Partes y Servicios CAT",
+          "stock_u": 6,
+          "lead_time_dias": 14
+        },
+        {
+          "repuesto_id": "RPT-003",
+          "cantidad": 1,
+          "descripcion": "Sensor de temperatura Volvo L120H",
+          "proveedor": "ElectroRepuestos Chile",
+          "stock_u": 22,
+          "lead_time_dias": 5
+        },
+        {
+          "repuesto_id": "RPT-077",
+          "cantidad": 2,
+          "descripcion": "Aceite hidráulico ISO 46",
+          "proveedor": "Repuestos Mineros Premium",
+          "stock_u": 153,
+          "lead_time_dias": 3
+        },
+        {
+          "repuesto_id": "RPT-073",
+          "cantidad": 1,
+          "descripcion": "Manguera de refrigerante",
+          "proveedor": "Correas Andinas",
+          "stock_u": 10,
+          "lead_time_dias": 23
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0007",
+      "plan_id": "PM-TRUCK-STD",
+      "horas": 400,
+      "plan_familia": "Camiones Mineros",
+      "plan_actividad": "Servicio camión minero (hidráulico/frenos)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-002",
+          "cantidad": 3,
+          "descripcion": "Kit pastillas de freno CAT 777F",
+          "proveedor": "Partes y Servicios CAT",
+          "stock_u": 6,
+          "lead_time_dias": 14
+        },
+        {
+          "repuesto_id": "RPT-001",
+          "cantidad": 1,
+          "descripcion": "Filtro de aceite hidráulico",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 18,
+          "lead_time_dias": 7
+        },
+        {
+          "repuesto_id": "RPT-003",
+          "cantidad": 1,
+          "descripcion": "Sensor de temperatura Volvo L120H",
+          "proveedor": "ElectroRepuestos Chile",
+          "stock_u": 22,
+          "lead_time_dias": 5
+        },
+        {
+          "repuesto_id": "RPT-044",
+          "cantidad": 1,
+          "descripcion": "Correa de compresor A/C",
+          "proveedor": "FLSmidth Chile",
+          "stock_u": 17,
+          "lead_time_dias": 10
+        },
+        {
+          "repuesto_id": "RPT-120",
+          "cantidad": 1,
+          "descripcion": "Cable de carga 50mm²",
+          "proveedor": "Hitachi Service",
+          "stock_u": 18,
+          "lead_time_dias": 14
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0008",
+      "plan_id": "PM-TRUCK-STD",
+      "horas": 800,
+      "plan_familia": "Camiones Mineros",
+      "plan_actividad": "Servicio camión minero (hidráulico/frenos)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-008",
+          "cantidad": 1,
+          "descripcion": "Correa trapezoidal industrial",
+          "proveedor": "Correas Andinas",
+          "stock_u": 12,
+          "lead_time_dias": 9
+        },
+        {
+          "repuesto_id": "RPT-001",
+          "cantidad": 1,
+          "descripcion": "Filtro de aceite hidráulico",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 18,
+          "lead_time_dias": 7
+        },
+        {
+          "repuesto_id": "RPT-002",
+          "cantidad": 1,
+          "descripcion": "Kit pastillas de freno CAT 777F",
+          "proveedor": "Partes y Servicios CAT",
+          "stock_u": 6,
+          "lead_time_dias": 14
+        },
+        {
+          "repuesto_id": "RPT-003",
+          "cantidad": 1,
+          "descripcion": "Sensor de temperatura Volvo L120H",
+          "proveedor": "ElectroRepuestos Chile",
+          "stock_u": 22,
+          "lead_time_dias": 5
+        },
+        {
+          "repuesto_id": "RPT-055",
+          "cantidad": 1,
+          "descripcion": "Sensor de oxígeno",
+          "proveedor": "Metso Outotec Parts",
+          "stock_u": 16,
+          "lead_time_dias": 5
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0009",
+      "plan_id": "PM-TRUCK-STD",
+      "horas": 1000,
+      "plan_familia": "Camiones Mineros",
+      "plan_actividad": "Servicio camión minero (hidráulico/frenos)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-001",
+          "cantidad": 1,
+          "descripcion": "Filtro de aceite hidráulico",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 18,
+          "lead_time_dias": 7
+        },
+        {
+          "repuesto_id": "RPT-002",
+          "cantidad": 4,
+          "descripcion": "Kit pastillas de freno CAT 777F",
+          "proveedor": "Partes y Servicios CAT",
+          "stock_u": 6,
+          "lead_time_dias": 14
+        },
+        {
+          "repuesto_id": "RPT-003",
+          "cantidad": 1,
+          "descripcion": "Sensor de temperatura Volvo L120H",
+          "proveedor": "ElectroRepuestos Chile",
+          "stock_u": 22,
+          "lead_time_dias": 5
+        },
+        {
+          "repuesto_id": "RPT-095",
+          "cantidad": 2,
+          "descripcion": "Conector eléctrico",
+          "proveedor": "Codelco Repuestos",
+          "stock_u": 12,
+          "lead_time_dias": 9
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0010",
+      "plan_id": "PM-TRUCK-STD",
+      "horas": 1200,
+      "plan_familia": "Camiones Mineros",
+      "plan_actividad": "Servicio camión minero (hidráulico/frenos)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-008",
+          "cantidad": 1,
+          "descripcion": "Correa trapezoidal industrial",
+          "proveedor": "Correas Andinas",
+          "stock_u": 12,
+          "lead_time_dias": 9
+        },
+        {
+          "repuesto_id": "RPT-001",
+          "cantidad": 2,
+          "descripcion": "Filtro de aceite hidráulico",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 18,
+          "lead_time_dias": 7
+        },
+        {
+          "repuesto_id": "RPT-002",
+          "cantidad": 1,
+          "descripcion": "Kit pastillas de freno CAT 777F",
+          "proveedor": "Partes y Servicios CAT",
+          "stock_u": 6,
+          "lead_time_dias": 14
+        },
+        {
+          "repuesto_id": "RPT-003",
+          "cantidad": 1,
+          "descripcion": "Sensor de temperatura Volvo L120H",
+          "proveedor": "ElectroRepuestos Chile",
+          "stock_u": 22,
+          "lead_time_dias": 5
+        },
+        {
+          "repuesto_id": "RPT-039",
+          "cantidad": 3,
+          "descripcion": "Kit de reparación de frenos",
+          "proveedor": "LubriAndes",
+          "stock_u": 12,
+          "lead_time_dias": 17
+        }
+      ]
+    }
+  ]
+}

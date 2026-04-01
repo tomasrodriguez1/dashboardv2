@@ -1,0 +1,66 @@
+{
+  "cliente": {
+    "cliente_id": "CL-VENTURA07",
+    "nombre": "Minera Austral"
+  },
+  "equipo": {
+    "equipo_id": "EQ-3009",
+    "modelo": "Caterpillar D11T",
+    "fabricante": "Caterpillar",
+    "serie": "CATD11T-2025-901",
+    "tasa_uso_horas_dia": 8,
+    "critico": true
+  },
+  "mantenciones": [
+    {
+      "peh_id": "PEH-0035",
+      "plan_id": "PM-DOZER-STD",
+      "horas": 300,
+      "plan_familia": "Tractores Oruga",
+      "plan_actividad": "Servicio tractor oruga (rodaje/enfriamiento)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-136",
+          "cantidad": 1,
+          "descripcion": "Kit sellos para tractor oruga D11T",
+          "proveedor": "Caterpillar Parts Chile",
+          "stock_u": 4,
+          "lead_time_dias": 18
+        },
+        {
+          "repuesto_id": "RPT-137",
+          "cantidad": 2,
+          "descripcion": "Rodamiento de rodillos D11T",
+          "proveedor": "Rodamientos del Sur",
+          "stock_u": 6,
+          "lead_time_dias": 12
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0036",
+      "plan_id": "PM-DOZER-STD",
+      "horas": 600,
+      "plan_familia": "Tractores Oruga",
+      "plan_actividad": "Servicio tractor oruga (rodaje/enfriamiento)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-136",
+          "cantidad": 2,
+          "descripcion": "Kit sellos para tractor oruga D11T",
+          "proveedor": "Caterpillar Parts Chile",
+          "stock_u": 4,
+          "lead_time_dias": 18
+        },
+        {
+          "repuesto_id": "RPT-138",
+          "cantidad": 1,
+          "descripcion": "Engranaje de transmisión oruga D11",
+          "proveedor": "Transmisiones Austrom",
+          "stock_u": 2,
+          "lead_time_dias": 25
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "cliente": {
+    "cliente_id": "CL-VENTURA06",
+    "nombre": "Norte Copper"
+  },
+  "equipo": {
+    "equipo_id": "EQ-3008",
+    "modelo": "Epiroc Boomer E2",
+    "fabricante": "Epiroc",
+    "serie": "EPR-BOOME2-2024-333",
+    "tasa_uso_horas_dia": 5,
+    "critico": true
+  },
+  "mantenciones": [
+    {
+      "peh_id": "PEH-0032",
+      "plan_id": "PM-DRILL-STD",
+      "horas": 250,
+      "plan_familia": "Perforadoras",
+      "plan_actividad": "Servicio perforadora (martillo/circulación)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-010",
+          "cantidad": 3,
+          "descripcion": "Manguera hidráulica HD 2\"",
+          "proveedor": "HidroFlex",
+          "stock_u": 40,
+          "lead_time_dias": 4
+        },
+        {
+          "repuesto_id": "RPT-066",
+          "cantidad": 2,
+          "descripcion": "Rodamiento de eje principal",
+          "proveedor": "Hidráulica Total",
+          "stock_u": 17,
+          "lead_time_dias": 11
+        },
+        {
+          "repuesto_id": "RPT-076",
+          "cantidad": 1,
+          "descripcion": "Radiador de aire acondicionado",
+          "proveedor": "HidroFlex",
+          "stock_u": 10,
+          "lead_time_dias": 24
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0033",
+      "plan_id": "PM-DRILL-STD",
+      "horas": 500,
+      "plan_familia": "Perforadoras",
+      "plan_actividad": "Servicio perforadora (martillo/circulación)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-012",
+          "cantidad": 1,
+          "descripcion": "Filtro combustible primario",
+          "proveedor": "FuelClean",
+          "stock_u": 30,
+          "lead_time_dias": 5
+        },
+        {
+          "repuesto_id": "RPT-089",
+          "cantidad": 1,
+          "descripcion": "Fusible de 30A",
+          "proveedor": "Metso Outotec Parts",
+          "stock_u": 13,
+          "lead_time_dias": 9
+        },
+        {
+          "repuesto_id": "RPT-108",
+          "cantidad": 3,
+          "descripcion": "Diente de cuchara estándar",
+          "proveedor": "Suministros Mineros S.A.",
+          "stock_u": 14,
+          "lead_time_dias": 20
+        },
+        {
+          "repuesto_id": "RPT-067",
+          "cantidad": 1,
+          "descripcion": "Rodamiento de dirección",
+          "proveedor": "Codelco Repuestos",
+          "stock_u": 12,
+          "lead_time_dias": 11
+        }
+      ]
+    },
+    {
+      "peh_id": "PEH-0034",
+      "plan_id": "PM-DRILL-STD",
+      "horas": 1000,
+      "plan_familia": "Perforadoras",
+      "plan_actividad": "Servicio perforadora (martillo/circulación)",
+      "repuestos": [
+        {
+          "repuesto_id": "RPT-010",
+          "cantidad": 2,
+          "descripcion": "Manguera hidráulica HD 2\"",
+          "proveedor": "HidroFlex",
+          "stock_u": 40,
+          "lead_time_dias": 4
+        },
+        {
+          "repuesto_id": "RPT-117",
+          "cantidad": 1,
+          "descripcion": "Bomba de combustible eléctrica",
+          "proveedor": "Correas Andinas",
+          "stock_u": 6,
+          "lead_time_dias": 12
+        },
+        {
+          "repuesto_id": "RPT-037",
+          "cantidad": 4,
+          "descripcion": "Líquido de frenos DOT 4",
+          "proveedor": "Epiroc Chile",
+          "stock_u": 12,
+          "lead_time_dias": 14
+        }
+      ]
+    }
+  ]
+}
